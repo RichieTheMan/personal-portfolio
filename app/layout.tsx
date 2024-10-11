@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { NavBar } from "@/components/NavBar";
+import { Footer } from "@/components/Footer";
 import "../globals.css";
 
-const geistSans = localFont({
-  src: "../assets/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../assets/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const bebasNeue = localFont({
+//   src: "../assets/fonts/BebasNeue-Regular.ttf",
+//   variable: "--font-bebas-neue",
+// });
+
+// const openSans = localFont({
+//   src: "../assets/fonts/OpenSans-Variable.ttf",
+//   variable: "--font-open-sans",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Ricardo Sousa | My Portfolio",
@@ -26,7 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

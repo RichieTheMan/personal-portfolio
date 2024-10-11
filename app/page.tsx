@@ -4,7 +4,6 @@ export default function HomePage() {
       <main>
         
       </main>
-      {/* footer */}
     </div>
   );
 }

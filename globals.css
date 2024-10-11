@@ -1,0 +1,46 @@
+/* Font Loading */
+@font-face {
+  font-family: "OpenSans";
+  src: 
+    local("OpenSans"),
+    url("./assets/fonts/OpenSans-Variable.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: 
+    local("BebasNeue"),
+    url("./assets/fonts/BebasNeue-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: 
+    local("Pacifico"),
+    url("./assets/fonts/Pacifico-Regular.ttf") format('truetype');
+}
+
+/* Global Styling */
+body {
+  margin: 0 40px 0 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 120px;
+  font-family: "OpenSans";
+}
+
+/* Component Styling */
+.navbar {
+  padding: 10px;
+  border: 1px black solid;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  padding: 10px;
+  border: 1px black solid;
+}
