@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+export default {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [],
+    localPatterns: [
+      {
+        pathname: '/assets/images/**',
+        search: '',
+      },
+    ],
+  },
+};

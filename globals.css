@@ -1,46 +1,114 @@
+/* CSS Imports */
+@import url("constants/colors.css");
+@import url("constants/spacing.css");
+
 /* Font Loading */
 @font-face {
   font-family: "OpenSans";
-  src: 
-    local("OpenSans"),
-    url("./assets/fonts/OpenSans-Variable.ttf") format('truetype');
+  src: local("OpenSans"), url("./public/assets/fonts/OpenSans-Variable.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "BebasNeue";
-  src: 
-    local("BebasNeue"),
-    url("./assets/fonts/BebasNeue-Regular.ttf") format('truetype');
+  src: local("BebasNeue"), url("./public/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Pacifico";
-  src: 
-    local("Pacifico"),
-    url("./assets/fonts/Pacifico-Regular.ttf") format('truetype');
+  src: local("Pacifico"), url("./public/assets/fonts/Pacifico-Regular.ttf") format("truetype");
 }
 
 /* Global Styling */
+html {
+  height: 100%;
+  background: var(--charcoal);
+}
+
 body {
-  margin: 0 40px 0 40px;
-  flex: 1;
+  margin: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 120px;
   font-family: "OpenSans";
+  color: white;
 }
 
-/* Component Styling */
-.navbar {
-  padding: 10px;
-  border: 1px black solid;
-  position: sticky;
+main {
   display: flex;
-  justify-content: space-between;
+  flex: 1;
 }
 
-.footer {
-  padding: 10px;
-  border: 1px black solid;
+.bounding-box {
+  border: 1px red solid;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.soft-text {
+  font-family: "OpenSans";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "BebasNeue";
+  color: white;
+  font-size: 72px;
+  font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+/* Utils */
+.gap-lg, .gap-md, .gap-sm, .gap-xs, .gap-xxs, .column {
+  display: flex;
+}
+
+.gap-lg {
+  gap: var(--lg);
+}
+
+.gap-md {
+  gap: var(--md);
+}
+
+.gap-sm {
+  gap: var(--sm);
+}
+
+.gap-xs {
+  gap: var(--xs);
+}
+
+.gap-xxs {
+  gap: var(--xxs);
+}
+
+.column {
+  flex-direction: column;
 }
