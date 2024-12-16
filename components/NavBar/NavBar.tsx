@@ -17,7 +17,7 @@ export function NavBar() {
       </div>
       <Image
         style={{ position: "absolute", left: "50%", top: "50%", transform: "translateY(-50%)"}}
-        src="/assets/images/logo-mark.png"
+        src="/assets/images/logo-mark-responsive.png"
         alt="Ricardo Sousa's Logo"
         width={22}
         height={22}

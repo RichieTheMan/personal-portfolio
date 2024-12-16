@@ -1,8 +1,8 @@
 @import url("../../globals.css");
 
 footer {
-  padding: 32px 200px;
-  gap: 20px;
+  padding: var(--padding-lg) var(--padding-xxl);
+  gap: var(--gap-lg);
   background-color: var(--dark-charcoal);
   display: flex;
   position: relative;
@@ -18,7 +18,7 @@ footer {
 .link-section {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: var(--gap-xl);
 }
 
 .entry-fade {
@@ -28,4 +28,39 @@ footer {
   position: absolute;
   top: -40px;
   left: 0;
+}
+
+.logo {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  footer {
+    padding: var(--padding-lg) 8%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .logo-responsive {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
+  footer {
+    flex-direction: column-reverse;
+    gap: var(--gap-xl);
+    padding: var(--padding-md);
+  }
+  .link-section {
+    flex-direction: column;
+    gap: var(--gap-xl);
+  }
+  .left-section {
+    align-items: center;
+    gap: var(--gap-xl);
+  }
+  .left-section .soft-text {
+    align-self: center;
+  }
 }

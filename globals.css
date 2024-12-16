@@ -1,6 +1,8 @@
 /* CSS Imports */
 @import url("constants/colors.css");
-@import url("constants/spacing.css");
+@import url("constants/gap.css");
+@import url("constants/padding.css");
+@import url("constants/screen-widths.css");
 
 /* Font Loading */
 @font-face {
@@ -19,6 +21,10 @@
 }
 
 /* Global Styling */
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   background: var(--charcoal);
@@ -90,23 +96,23 @@ p {
 }
 
 .gap-lg {
-  gap: var(--lg);
+  gap: var(--gap-lg);
 }
 
 .gap-md {
-  gap: var(--md);
+  gap: var(--gap-md);
 }
 
 .gap-sm {
-  gap: var(--sm);
+  gap: var(--gap-sm);
 }
 
 .gap-xs {
-  gap: var(--xs);
+  gap: var(--gap-xs);
 }
 
 .gap-xxs {
-  gap: var(--xxs);
+  gap: var(--gap-xxs);
 }
 
 .column {

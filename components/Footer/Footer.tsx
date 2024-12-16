@@ -10,10 +10,18 @@ export function Footer() {
       <div className="entry-fade" />
       <div className="left-section">
         <Image
-          src="/assets/images/logo-mark.png"
+          className="logo-responsive"
+          src="/assets/images/logo-mark-responsive.png"
           alt="Ricardo Sousa's Logo"
           width={22}
           height={22}
+        />
+        <Image
+          className="logo"
+          src="/assets/images/logo-mark.png"
+          alt="Ricardo Sousa's Logo"
+          width={64}
+          height={64}
         />
         <div className="gap-xxs column">
           <p>© 2024 Ricardo Sousa. All Rights Reserved</p>
@@ -25,8 +33,8 @@ export function Footer() {
           <h1 className="soft-text">PAGES</h1>
           <div className="gap-xxs column">
             <Link text="Work" href="/" />
-            <Link text="Freelance" href="/" />
-            <Link text="About Me" href="/" />
+            <Link text="Freelance" href="/freelance" />
+            <Link text="About Me" href="/information" />
           </div>
         </div>
         <div className="gap-lg column">
