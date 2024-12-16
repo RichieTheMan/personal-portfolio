@@ -27,6 +27,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   background: var(--charcoal);
 }
 
@@ -91,7 +92,12 @@ p {
 }
 
 /* Utils */
-.gap-lg, .gap-md, .gap-sm, .gap-xs, .gap-xxs, .column {
+.gap-lg,
+.gap-md,
+.gap-sm,
+.gap-xs,
+.gap-xxs,
+.column {
   display: flex;
 }
 
