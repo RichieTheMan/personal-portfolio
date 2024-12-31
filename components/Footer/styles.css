@@ -30,7 +30,7 @@ footer {
   left: 0;
 }
 
-.logo {
+footer .logo {
   display: none;
 }
 
@@ -44,7 +44,7 @@ footer {
   .logo-responsive {
     display: none;
   }
-  .logo {
+  footer .logo {
     display: block;
   }
   footer {
