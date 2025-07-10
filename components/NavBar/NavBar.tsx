@@ -36,18 +36,17 @@ function NavBarContent() {
           </g>
         </svg>
       </button>
-      <div className="nav-section">
-        <NavButton text="Work" href="/" />
-        <NavButton text="Freelance" href="/freelance" />
-        <NavButton text="About Me" href="/information" />
-      </div>
       <Image
         className="logo"
-        src="/assets/images/logo-mark-responsive.png"
+        src="/assets/images/logo-v4.1.png"
         alt="Ricardo Sousa's Logo"
         width={22}
         height={22}
       />
+      <div className="nav-section center">
+        <NavButton text="Work" href="/" />
+        <NavButton text="About Me" href="/information" />
+      </div>
       <div className="nav-section">
         <ExternalLink text="Resume" href="/" />
         <LinkedInIconLink />

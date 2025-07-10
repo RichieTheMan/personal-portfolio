@@ -29,11 +29,10 @@ nav {
 .nav-button {
   font-family: "OpenSans";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 6px;
-  padding: 4px 16px;
-  color: white;
-  background-color: var(--light-charcoal);
+  padding: 4px;
+  color: #C4C5CD;
 
   transition: opacity 0.2s ease;
 }
@@ -47,9 +46,9 @@ nav {
   font-size: 14px;
   font-weight: 500;
   border-radius: 6px;
-  padding: 4px 16px;
-  color: var(--charcoal);
-  background-color: white;
+  padding: 4px;
+  color: white;
+  text-shadow: 0 0 8px hsla(0, 0%, 100%, 0.6);
   cursor: default;
 }
 
@@ -63,11 +62,11 @@ nav {
   color: white;
 }
 
-nav .logo {
+.center {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .dropdown-menu-button {

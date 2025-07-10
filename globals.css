@@ -28,7 +28,7 @@
 html {
   height: 100%;
   width: 100%;
-  background: var(--charcoal);
+  background: #788488;
 }
 
 body {
@@ -77,8 +77,9 @@ a {
 h1 {
   font-family: "BebasNeue";
   color: white;
-  font-size: 72px;
+  font-size: 110px;
   font-weight: 100;
+  line-height: 100%;
 }
 
 h1,

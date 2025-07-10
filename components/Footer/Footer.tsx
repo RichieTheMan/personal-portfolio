@@ -11,14 +11,14 @@ export function Footer() {
       <div className="left-section">
         <Image
           className="logo-responsive"
-          src="/assets/images/logo-mark-responsive.png"
+          src="/assets/images/logo-v4.1.png"
           alt="Ricardo Sousa's Logo"
           width={22}
           height={22}
         />
         <Image
           className="logo"
-          src="/assets/images/logo-mark.png"
+          src="/assets/images/logo-v4.1.png"
           alt="Ricardo Sousa's Logo"
           width={64}
           height={64}
@@ -33,7 +33,6 @@ export function Footer() {
           <h1 className="soft-text">PAGES</h1>
           <div className="gap-xxs column">
             <Link text="Work" href="/" />
-            <Link text="Freelance" href="/freelance" />
             <Link text="About Me" href="/information" />
           </div>
         </div>

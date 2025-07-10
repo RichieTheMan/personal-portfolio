@@ -1,37 +1,12 @@
 @import url("../../globals.css");
 
-footer {
+.hero-section {
   padding: var(--padding-lg) var(--padding-xxl);
-  gap: var(--gap-lg);
-  background-color: #788488;
   display: flex;
-  position: relative;
-}
-
-.left-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-}
-
-.link-section {
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap-xl);
-}
-
-.entry-fade {
-  background: linear-gradient(180deg, #788488 0%, #788488 100%);
   width: 100%;
-  height: 40px;
-  position: absolute;
-  top: -40px;
-  left: 0;
-}
-
-footer .logo {
-  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
 
 @media screen and (max-width: 940px) {
