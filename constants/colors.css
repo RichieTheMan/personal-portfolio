@@ -1,6 +1,11 @@
 :root {
   --sky-blue: #2B83E8;
   --charcoal: #181919;
+
   --grey: #C4C5CD;
+  --grey-10: #C4C5CD10;
+
   --white: white;
+  --white-40: #ffffff40;
+  --white-10: #ffffff10;
 }

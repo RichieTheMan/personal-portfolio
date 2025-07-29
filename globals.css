@@ -7,7 +7,8 @@
 /* Font Loading */
 @font-face {
   font-family: "OpenSans";
-  src: local("OpenSans"), url("./public/assets/fonts/OpenSans-Variable.ttf") format("truetype");
+  src: local("OpenSans"),
+    url("./public/assets/fonts/OpenSans-Variable.ttf") format("truetype");
 }
 
 /* @font-face {
@@ -55,7 +56,6 @@
   font-style: normal;
 }
 
-
 /* Global Styling */
 * {
   box-sizing: border-box;
@@ -64,7 +64,7 @@
 html {
   height: 100%;
   width: 100%;
-  background: #788488;
+  background: var(--charcoal);
 }
 
 body {
@@ -80,6 +80,7 @@ body {
 main {
   display: flex;
   flex: 1;
+  flex-direction: column;
 }
 
 .bounding-box {
@@ -98,24 +99,19 @@ input[type="reset"] {
   outline: inherit;
 }
 
-.soft-text {
-  font-family: "OpenSans";
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 11px;
-  color: var(--gray);
-}
-
 a {
   text-decoration: none;
 }
 
 h1 {
-  font-family: "BebasNeue";
-  color: white;
-  font-size: 110px;
+  font-family: "Coolvetica";
+  font-size: var(--f-lg);
   font-weight: 100;
   line-height: 100%;
+}
+
+p {
+  font-size: var(--f-xs);
 }
 
 h1,
@@ -128,34 +124,47 @@ p {
   margin: 0px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
 /* Utils */
 .gap-lg,
 .gap-md,
 .gap-sm,
 .gap-xs,
-.gap-xxs,
+.gap-tiny,
 .column {
   display: flex;
 }
 
 .gap-lg {
-  gap: var(--gap-lg);
+  gap: var(--lg);
 }
 
 .gap-md {
-  gap: var(--gap-md);
+  gap: var(--md);
 }
 
 .gap-sm {
-  gap: var(--gap-sm);
+  gap: var(--sm);
 }
 
 .gap-xs {
-  gap: var(--gap-xs);
+  gap: var(--xs);
 }
 
-.gap-xxs {
-  gap: var(--gap-xxs);
+.gap-tiny {
+  gap: var(--tiny);
+}
+
+.gap-micro {
+  gap: var(--micro);
 }
 
 .column {

@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 import "./styles.css";
 import { NavButton } from "./NavButton";
-import { ExternalLink } from "../ExternalLink";
 import { LinkedInIconLink } from "../LinkedInIconLink";
 import { MailIconLink } from "../MailIconLink";
 import { NavMenu } from "./NavMenu";
 import { NavBarProvider, useNavBarContext } from "./NavBarContext";
+import { GlassContainer } from "../GlassContainer";
 
 function NavBarContent() {
   const { showNavMenu } = useNavBarContext();
@@ -38,17 +38,16 @@ function NavBarContent() {
       </button>
       <Image
         className="logo"
-        src="/assets/images/logo-v4.1.png"
+        src="/assets/svgs/logo.svg"
         alt="Ricardo Sousa's Logo"
-        width={22}
-        height={22}
+        width={28}
+        height={28}
       />
-      <div className="nav-section center">
+      <GlassContainer className="nav-section center" style={{zIndex: 999}}>
         <NavButton text="Work" href="/" />
-        <NavButton text="About Me" href="/information" />
-      </div>
+        <NavButton text="About" href="/information" />
+      </GlassContainer>
       <div className="nav-section">
-        <ExternalLink text="Resume" href="/" />
         <LinkedInIconLink />
         <MailIconLink />
       </div>

@@ -1,41 +1,45 @@
 @import url("../../globals.css");
 
 .hero-section {
-  padding: var(--padding-lg) var(--padding-xxl);
+  padding: 0 var(--huge);
   display: flex;
   width: 100%;
-  justify-content: space-between;
   flex-direction: column;
   position: relative;
+  gap: var(--lg);
+  align-items: center;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 110px;
+}
+
+.hero-secondary {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: var(--sm);
+  align-items: center;
+}
+
+.hero-heading {
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+  top: 10;
+  left: 50%;
+  transform: translateX(-50%);
+
+  mix-blend-mode: overlay;
 }
 
 @media screen and (max-width: 940px) {
-  footer {
-    padding: var(--padding-lg) 8%;
-  }
 }
 
 @media screen and (max-width: 620px) {
-  .logo-responsive {
-    display: none;
-  }
-  footer .logo {
-    display: block;
-  }
-  footer {
-    flex-direction: column-reverse;
-    gap: var(--gap-xl);
-    padding: var(--padding-md);
-  }
-  .link-section {
-    flex-direction: column;
-    gap: var(--gap-xl);
-  }
-  .left-section {
-    align-items: center;
-    gap: var(--gap-xl);
-  }
-  .left-section .soft-text {
-    align-self: center;
-  }
 }

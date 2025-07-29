@@ -1,7 +1,7 @@
 @import url("../../globals.css");
 
 nav {
-  padding: 16px;
+  padding: var(--sm) var(--xl);
   position: sticky;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ nav {
   align-items: baseline;
   position: fixed;
   padding: 16px;
-  background-color: var(--dark-charcoal);
+  background-color: var(--charcoal);
   top: 0;
   bottom: 0;
   left: 0;
@@ -23,43 +23,42 @@ nav {
 
 .nav-section {
   display: flex;
-  gap: 16px;
+  gap: var(--sm);
 }
 
 .nav-button {
   font-family: "OpenSans";
-  font-size: 14px;
-  font-weight: 400;
-  border-radius: 6px;
-  padding: 4px;
-  color: #C4C5CD;
-
-  transition: opacity 0.2s ease;
+  font-size: var(--f-tiny);
+  color: var(--grey);
+  
+  border-radius: 999px;
+  border: 1px solid var(--grey);
+  padding: var(--tiny) var(--xs);
+  background-color: var(--grey-10);
+  box-shadow: inset 0 4px 24px hsla(0, 0%, 0%, 0.25);
+  
+  transition: 0.2s ease;
 }
 
 .nav-button:hover {
-  opacity: 0.6;
+  color: var(--white);
+  text-shadow: 0 0 10px hsla(0, 0%, 100%, 0.6);
+
+  background-color: var(--white-10);
 }
 
 .nav-button-active {
   font-family: "OpenSans";
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 6px;
-  padding: 4px;
-  color: white;
-  text-shadow: 0 0 8px hsla(0, 0%, 100%, 0.6);
-  cursor: default;
-}
+  font-size: var(--f-tiny);
+  color: var(--white);
+  text-shadow: 0 0 10px hsla(0, 0%, 100%, 0.6);
 
-.nav-link {
-  font-family: "OpenSans";
-  display: flex;
-  gap: 4px;
-  font-weight: 500;
-  font-size: 14px;
-  padding: 4px;
-  color: white;
+  border: 1px solid var(--white);
+  border-radius: 999px;
+  padding: var(--tiny) var(--xs);
+  background-color: var(--white-40);
+  box-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.25);
+  cursor: default;
 }
 
 .center {
