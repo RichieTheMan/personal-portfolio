@@ -5,7 +5,7 @@ import "./styles.css";
 export function HeroSection() {
   return (
     <section className="hero-section">
-      <h1 className="hidden">Ricardo Sousa's Web Portfolio</h1>
+      <h1 className="hidden">{`Ricardo Sousa's Web Portfolio`}</h1>
 
       <div className="hero-main-frame">
         <div className="name-frame">
