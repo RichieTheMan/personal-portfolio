@@ -1,0 +1,42 @@
+@import url("../../globals.css");
+
+.job-history-section {
+  margin: 0 var(--huge);
+  padding: var(--lg) var(--xl);
+  display: flex;
+  background-color: var(--smoke);
+  position: relative;
+  justify-content: space-between;
+  border-radius: 100px;
+  border: 1px solid var(--stone);
+}
+
+.job-frame {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.time-text {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: var(--f-sm);
+}
+
+.role-text {
+  font-size: var(--f-xs);
+}
+
+.company-link {
+  font-size: var(--f-xs);
+  text-decoration: underline dotted var(--white);
+  text-underline-position: under;
+}
+
+@media screen and (max-width: 940px) {
+}
+
+@media screen and (max-width: 620px) {
+}

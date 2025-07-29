@@ -1,23 +1,27 @@
 @import url("../../globals.css");
 
 .hero-section {
-  padding: 0 var(--huge);
+  margin: 0 var(--huge);
   display: flex;
-  width: 100%;
   flex-direction: column;
   position: relative;
   gap: var(--lg);
   align-items: center;
 }
 
-.hero-main {
+.hero-main-frame {
   display: flex;
   flex-direction: column;
   position: relative;
   gap: 110px;
 }
 
-.hero-secondary {
+.name-frame {
+  position: "relative";
+  margin-bottom: var(--xl);
+}
+
+.former-frame {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -25,17 +29,28 @@
   align-items: center;
 }
 
-.hero-heading {
+.name-text {
+  font-family: "Coolvetica";
+  font-size: var(--f-lg);
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
   text-align: center;
-}
-
-.name {
   position: absolute;
   top: 10;
   left: 50%;
   transform: translateX(-50%);
 
   mix-blend-mode: overlay;
+}
+
+.skills-text {
+  font-family: "Coolvetica";
+  font-size: var(--f-lg);
+  font-weight: 100;
+  line-height: 100%;
+
+  text-align: center;
 }
 
 @media screen and (max-width: 940px) {

@@ -1,9 +1,12 @@
 :root {
-  --sky-blue: #2B83E8;
+  --sky-blue: #2b83e8;
+
+  --stone: #474747;
+  --smoke: #252525;
   --charcoal: #181919;
 
-  --grey: #C4C5CD;
-  --grey-10: #C4C5CD10;
+  --grey: #c4c5cd;
+  --grey-10: #c4c5cd10;
 
   --white: white;
   --white-40: #ffffff40;

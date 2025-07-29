@@ -5,17 +5,19 @@ import "./styles.css";
 export function HeroSection() {
   return (
     <section className="hero-section">
-      <div className="hero-main">
-        <div style={{ position: "relative", marginBottom: "var(--xl)" }}>
-          <h1 className="name hero-heading">Ricardo Sousa</h1>
-          <h1 className="name hero-heading">Ricardo Sousa</h1>
+      <h1 className="hidden">Ricardo Sousa's Web Portfolio</h1>
+
+      <div className="hero-main-frame">
+        <div className="name-frame">
+          <span className="name-text">Ricardo Sousa</span>
+          <span className="name-text">Ricardo Sousa</span>
         </div>
-        <h1 className="hero-heading">
+        <h1 className="skills-text">
           Front-End Developer & Self-Taught Designer
         </h1>
       </div>
 
-      <div className="hero-secondary">
+      <div className="former-frame">
         <p>Former student at</p>
         <Image
           src="/assets/images/isla-logo.png"
