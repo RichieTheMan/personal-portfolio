@@ -1,14 +1,12 @@
 @import url("../../globals.css");
 
 .job-history-section {
-  margin: 0 var(--huge);
-  padding: var(--lg) var(--xl);
-  display: flex;
-  background-color: var(--smoke);
-  position: relative;
+  margin-inline: var(--huge);
+}
+
+.job-history-frame {
+  padding: var(--lg) var(--xl) !important;
   justify-content: space-between;
-  border-radius: 100px;
-  border: 1px solid var(--stone);
 }
 
 .job-frame {

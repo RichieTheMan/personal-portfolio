@@ -1,7 +1,7 @@
 @import url("../../globals.css");
 
 .hero-section {
-  margin: 0 var(--huge);
+  margin-inline: var(--huge);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 110px;
 }
 
 .name-frame {
@@ -37,9 +36,8 @@
   text-transform: uppercase;
   text-align: center;
   position: absolute;
-  top: 10;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
 
   mix-blend-mode: overlay;
 }

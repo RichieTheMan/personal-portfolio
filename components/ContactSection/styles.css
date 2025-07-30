@@ -1,0 +1,56 @@
+@import url("../../globals.css");
+
+.contact-section {
+  margin-inline: var(--huge);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-text-frame {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+}
+
+.contact-header-frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
+
+.contact-text {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--f-lg);
+}
+
+.contact-description-text {
+  font-size: var(--f-xs);
+  color: var(--grey);
+}
+
+.social-frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+}
+
+.social-text {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--f-sm);
+  color: var(--grey);
+}
+
+.social-list-frame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}
+
+@media screen and (max-width: 940px) {
+}
+
+@media screen and (max-width: 620px) {
+}

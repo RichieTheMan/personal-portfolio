@@ -4,8 +4,7 @@ a.link {
   font-family: "OpenSans";
   display: flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  padding: 5.4px 0px;
-  color: white;
+  font-size: var(--f-tiny);
+  padding-block: var(--f-micro);
+  color: var(--white);
 }

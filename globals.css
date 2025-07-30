@@ -131,7 +131,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Coolvetica";
   text-transform: uppercase;
+  font-weight: 100;
 }
 
 /* Utils */
@@ -174,4 +176,17 @@ h6 {
 
 .hidden {
   display: none !important;
+}
+
+.divisor {
+  height: 1px;
+  position: relative;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    #c4c5cd00 0%,
+    var(--grey) 50%,
+    #c4c5cd00 100%
+  );
 }
