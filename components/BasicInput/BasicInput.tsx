@@ -21,7 +21,7 @@ export function BasicInput({
   };
 
   return (
-    <div className="basic-input-frame">
+    <div className={`basic-input-frame ${className}`}>
       <label className="hidden">{label}</label>
       <input
         type="text"
@@ -31,7 +31,7 @@ export function BasicInput({
         onChange={handleChange}
         {...rest}
       />
-      {/* {error && <div className="">{error}</div>} */}
+      {error && <div className="">{error}</div>}
     </div>
   );
 }
