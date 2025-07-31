@@ -3,11 +3,11 @@
 .basic-card-frame {
   padding: var(--lg);
   display: flex;
-  background: linear-gradient(0deg, var(--smoke) 70%, var(--deep-smoke) 100%);
+  background: var(--card-background-gradient);
   position: relative;
-  border-radius: 100px;
+  border-radius: var(--card-radius);
   border: 1px solid var(--stone);
-  box-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.25);
+  box-shadow: var(--basic-drop-shadow);
 }
 
 @media screen and (max-width: 940px) {

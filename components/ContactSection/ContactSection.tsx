@@ -3,6 +3,8 @@ import "./styles.css";
 import { BasicCard } from "../BasicCard";
 import { LinkedInIconLink } from "../LinkedInIconLink";
 import { MailIconLink } from "../MailIconLink";
+import { BasicInput } from "../BasicInput";
+import { SubmitButton } from "../SubmitButton";
 
 export function ContactSection() {
   return (
@@ -24,7 +26,19 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-      <BasicCard className="contact-form-frame"></BasicCard>
+      <BasicCard className="contact-form-frame">
+        <h2 className="contact-form-text">Contact</h2>
+        <div className="contact-input-frame">
+          <BasicInput label="Name" />
+          <BasicInput label="Email" />
+          <div className="contact-input-row">
+            <BasicInput label="Company" />
+            <BasicInput label="Subject" />
+          </div>
+          <BasicInput label="Message" />
+        </div>
+        <SubmitButton text="Send" />
+      </BasicCard>
     </section>
   );
 }

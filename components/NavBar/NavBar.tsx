@@ -24,7 +24,11 @@ function NavBarContent() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
           <g id="SVGRepo_iconCarrier">
             <path
               d="M4 6H20M4 12H20M4 18H20"
@@ -43,7 +47,7 @@ function NavBarContent() {
         width={28}
         height={28}
       />
-      <GlassContainer className="nav-section center" style={{zIndex: 999}}>
+      <GlassContainer className="nav-section center" style={{ zIndex: 999 }}>
         <NavButton text="Work" href="/" />
         <NavButton text="About" href="/information" />
       </GlassContainer>

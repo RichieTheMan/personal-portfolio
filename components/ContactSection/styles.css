@@ -5,12 +5,13 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  gap: var(--lg);
 }
 
 .contact-text-frame {
   display: flex;
   flex-direction: column;
-  justify-items: space-between;
+  justify-content: space-between;
 }
 
 .contact-header-frame {
@@ -47,6 +48,30 @@
   display: flex;
   flex-direction: row;
   gap: var(--sm);
+}
+
+.contact-form-frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.contact-input-frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+
+  cursor: text;
+}
+
+.contact-input-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}
+
+.contact-form-text {
+  font-size: var(--f-sm);
 }
 
 @media screen and (max-width: 940px) {

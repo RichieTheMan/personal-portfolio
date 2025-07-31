@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { GlassCard } from "../GlassCard";
+import Image from "next/image";
 
 export function LatestWorkSection() {
   return (
@@ -20,6 +21,13 @@ export function LatestWorkSection() {
             <div className="circle-divisor" />
             <span className="project-role-text">{`Mobile UI/UX`}</span>
           </div>
+          <Image
+            src={"/assets/images/devices/iphone-12-pro-max-silver-portrait.png"}
+            alt="Iphone Placeholder Image"
+            width={670.34}
+            height={1346.42}
+            className="iphone-image"
+          />
         </GlassCard>
         <div className="divisor" />
       </div>

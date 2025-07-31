@@ -1,8 +1,5 @@
 /* CSS Imports */
-@import url("constants/colors.css");
-@import url("constants/screen-widths.css");
-@import url("constants/spacing.css");
-@import url("constants/font-sizes.css");
+@import url("constants/constants.css");
 
 /* Font Loading */
 @font-face {
@@ -10,16 +7,6 @@
   src: local("OpenSans"),
     url("./public/assets/fonts/OpenSans-Variable.ttf") format("truetype");
 }
-
-/* @font-face {
-  font-family: "BebasNeue";
-  src: local("BebasNeue"), url("./public/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
-} */
-
-/* @font-face {
-  font-family: "Pacifico";
-  src: local("Pacifico"), url("./public/assets/fonts/Pacifico-Regular.ttf") format("truetype");
-} */
 
 @font-face {
   font-family: "Coolvetica";
@@ -69,12 +56,12 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: "OpenSans";
-  color: white;
+  color: var(--white);
 }
 
 main {
@@ -88,16 +75,24 @@ main {
   border: 1px red solid;
 }
 
+.background-bounding-box {
+  background-color: red;
+}
+
 button,
-input[type="submit"],
-input[type="reset"] {
+input {
   background: none;
   color: inherit;
   border: none;
   padding: 0;
   font: inherit;
-  cursor: pointer;
+  cursor: inherit;
   outline: inherit;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
@@ -105,9 +100,7 @@ a {
 }
 
 h1 {
-  font-family: "Coolvetica";
   font-size: var(--f-lg);
-  font-weight: 100;
   line-height: 100%;
 }
 

@@ -1,0 +1,19 @@
+@import url("../../globals.css");
+
+.basic-input-frame {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--dust);
+  box-shadow: var(--basic-inset-shadow);
+  border: 1px solid var(--stone);
+}
+
+.basic-input {
+  font-family: "OpenSans";
+  display: flex;
+  flex: 1;
+  font-size: var(--f-tiny);
+  color: var(--grey);
+  border: none;
+}

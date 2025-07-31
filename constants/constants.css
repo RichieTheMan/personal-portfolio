@@ -1,0 +1,72 @@
+:root {
+  /* Font Sizes */
+  --f-huge: 345.57px;
+  --f-xl: 213.58px;
+  --f-lg: 132px;
+  --f-md: 81.58px;
+  --f-sm: 50.42px;
+  --f-xs: 31.16px;
+  --f-tiny: 19.26px;
+  --f-micro: 12px;
+
+  /* Spacing */
+  --massive: 385px;
+  --huge: 240px;
+  --xl: 150px;
+  --lg: 94px;
+  --md: 59px;
+  --sm: 37px;
+  --xs: 23px;
+  --tiny: 14px;
+  --micro: 9px;
+
+  /* Border Radius */
+  --card-radius: 100px;
+  --full-radius: 999px;
+
+  /* Colors */
+  --sky-blue: #2b83e8;
+
+  --stone: #474747;
+  --dust: #2b2b2b;
+  --smoke: #252525;
+  --deep-smoke: #1d1d1d;
+  --charcoal: #181919;
+
+  --grey: #c4c5cd;
+  --grey-40: #c4c5cd40;
+  --grey-10: #c4c5cd10;
+
+  --white: white;
+  --white-40: #ffffff40;
+  --white-10: #ffffff10;
+
+  /* Gradients */
+  --glass-gradient: linear-gradient(
+    135deg,
+    var(--white-40) 0%,
+    var(--grey-10) 80%
+  );
+
+  --card-background-gradient: linear-gradient(
+    0deg,
+    var(--smoke) 70%,
+    var(--deep-smoke) 100%
+  );
+
+  --inverted-card-background-gradient: linear-gradient(
+    0deg,
+    var(--grey) 70%,
+    var(--white) 100%
+  );
+
+  /* Effects */
+  --basic-drop-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.25);
+  --basic-inset-shadow: inset 0 4px 24px hsla(0, 0%, 0%, 0.25);
+
+  --glass-inset-glow: inset 0 0 10px var(--grey);
+
+  --text-glow: 0 0 30px var(--white-40);
+
+  --glass-blur: blur(40px);
+}
