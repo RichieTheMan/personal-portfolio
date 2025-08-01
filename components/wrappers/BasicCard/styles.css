@@ -8,6 +8,7 @@
   border-radius: var(--card-radius);
   border: 1px solid var(--stone);
   box-shadow: var(--basic-drop-shadow);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 940px) {

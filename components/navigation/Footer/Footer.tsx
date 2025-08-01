@@ -7,7 +7,6 @@ import { Link } from "../../links/Link";
 export function Footer() {
   return (
     <footer>
-      {/* <div className="entry-fade" /> */}
       <div className="left-section">
         <Image
           className="logo"
@@ -31,7 +30,7 @@ export function Footer() {
           <h1 className="soft-text">PAGES</h1>
           <div className="gap-micro column">
             <Link text="Work" href="/" />
-            <Link text="About Me" href="/information" />
+            <Link text="About" href="/information" />
           </div>
         </div>
         <div className="gap-xs column">

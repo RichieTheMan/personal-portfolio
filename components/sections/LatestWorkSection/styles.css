@@ -41,6 +41,7 @@
 .project-header-text {
   font-family: "Coolvetica";
   text-transform: uppercase;
+  color: var(--white);
   font-size: var(--fmd);
   font-weight: 100;
 }

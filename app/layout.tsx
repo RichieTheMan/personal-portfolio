@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NavBar } from "@/components/navigation/NavBar";
 import { Footer } from "@/components/navigation/Footer";
 import "../globals.css";
+import Head from "next/head";
 
 // const bebasNeue = localFont({
 //   src: "../assets/fonts/BebasNeue-Regular.ttf",
@@ -15,9 +16,12 @@ import "../globals.css";
 // });
 
 export const metadata: Metadata = {
-  title: "Ricardo Sousa | My Portfolio",
-  description: "Lorem Ipsum",
-  keywords: ["react", "front-end", "mobile"],
+  title: "Ricardo Sousa",
+  description: "Hello, I'm Ricardo, welcome to my digital portfolio.",
+  keywords: ["react", "react-native", "design", "front-end", "mobile"],
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({
