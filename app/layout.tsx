@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { NavBar } from "@/components/navigation/NavBar";
 import { Footer } from "@/components/navigation/Footer";
 import "../globals.css";
-import Head from "next/head";
 
 // const bebasNeue = localFont({
 //   src: "../assets/fonts/BebasNeue-Regular.ttf",
