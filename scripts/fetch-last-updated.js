@@ -1,7 +1,7 @@
 const fs = require("fs");
 const https = require("https");
 
-const repo = "rikis/personal-portfolio";
+const repo = "RichieTheMan/personal-portfolio";
 const url = `https://api.github.com/repos/${repo}/commits?per_page=1`;
 
 https.get(url, { headers: { "User-Agent": "node.js" } }, (res) => {
