@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { NavBar } from "@/components/NavBar";
-import { Footer } from "@/components/Footer";
+import { NavBar } from "@/components/navigation/NavBar";
+import { Footer } from "@/components/navigation/Footer";
 import "../globals.css";
 
 // const bebasNeue = localFont({
