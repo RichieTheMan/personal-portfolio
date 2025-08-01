@@ -1,13 +1,13 @@
 :root {
   /* Font Sizes */
-  --f-huge: 345.57px;
-  --f-xl: 213.58px;
-  --f-lg: 132px;
-  --f-md: 81.58px;
-  --f-sm: 50.42px;
-  --f-xs: 31.16px;
-  --f-tiny: 19.26px;
-  --f-micro: 12px;
+  --fhuge: 345.57px;
+  --fxl: 213.58px;
+  --flg: 132px;
+  --fmd: 81.58px;
+  --fsm: 50.42px;
+  --fxs: 31.16px;
+  --ftiny: 19.26px;
+  --fmicro: 12px;
 
   /* Spacing */
   --massive: 385px;

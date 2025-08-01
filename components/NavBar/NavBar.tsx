@@ -52,8 +52,8 @@ function NavBarContent() {
         <NavButton text="About" href="/information" />
       </GlassContainer>
       <div className="nav-section">
-        <LinkedInIconLink />
-        <MailIconLink />
+        <LinkedInIconLink size={22} />
+        <MailIconLink size={22} />
       </div>
     </nav>
   );

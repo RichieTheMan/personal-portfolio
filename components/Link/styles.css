@@ -4,7 +4,7 @@ a.link {
   font-family: "OpenSans";
   display: flex;
   align-items: center;
-  font-size: var(--f-tiny);
-  padding-block: var(--f-micro);
+  font-size: var(--ftiny);
+  padding-block: var(--fmicro);
   color: var(--white);
 }

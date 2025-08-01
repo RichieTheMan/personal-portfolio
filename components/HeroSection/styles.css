@@ -30,7 +30,7 @@
 
 .name-text {
   font-family: "Coolvetica";
-  font-size: var(--f-lg);
+  font-size: var(--flg);
   color: var(--grey);
   font-weight: 100;
   line-height: 100%;
@@ -41,13 +41,13 @@
 }
 
 .skills-text {
-  font-size: var(--f-lg);
+  font-size: var(--flg);
   /* text-shadow: var(--text-glow); */
 
   text-align: center;
 
-  animation: light-flicker 2s linear forwards;
-  animation-delay: 0.4s;
+  animation: light-flicker 0.3s linear forwards;
+  animation-delay: 1s;
 }
 
 .hero-light-frame {
@@ -134,25 +134,19 @@
   0% {
     text-shadow: 0 0 30px #ffffff00;
   }
-  34% {
-    text-shadow: 0 0 30px #ffffff00;
-  }
-  34.02% {
+  0.02% {
     text-shadow: var(--text-glow);
   }
-  40% {
+  30% {
     text-shadow: var(--text-glow);
   }
-  40.02% {
+  30.02% {
     text-shadow: 0 0 30px #ffffff00;
   }
-  45.9% {
+  80% {
     text-shadow: 0 0 30px #ffffff00;
   }
-  45.92% {
-    text-shadow: var(--text-glow);
-  }
-  72% {
+  80.02% {
     text-shadow: var(--text-glow);
   }
   100% {

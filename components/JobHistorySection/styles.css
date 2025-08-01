@@ -20,15 +20,15 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   color: var(--grey);
-  font-size: var(--f-sm);
+  font-size: var(--fsm);
 }
 
 .role-text {
-  font-size: var(--f-xs);
+  font-size: var(--fxs);
 }
 
 .company-link {
-  font-size: var(--f-xs);
+  font-size: var(--fxs);
   text-decoration: underline dotted var(--white);
   text-underline-position: under;
 }

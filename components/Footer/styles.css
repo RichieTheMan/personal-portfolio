@@ -20,13 +20,13 @@ footer {
 }
 
 .footer-copyright-text {
-  font-size: var(--f-tiny);
+  font-size: var(--ftiny);
 }
 
 .soft-text {
   font-family: "OpenSans";
   text-transform: uppercase;
-  font-size: var(--f-micro);
+  font-size: var(--fmicro);
   font-weight: normal;
   color: var(--grey);
 }

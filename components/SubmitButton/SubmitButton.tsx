@@ -13,7 +13,11 @@ export function SubmitButton({
   ...rest
 }: SubmitButtonProps) {
   return (
-    <button className={`submit-button-frame ${className}`} {...rest}>
+    <button
+      className={`submit-button-frame ${className}`}
+      type="submit"
+      {...rest}
+    >
       {text}
     </button>
   );

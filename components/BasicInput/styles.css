@@ -13,7 +13,7 @@
   font-family: "OpenSans";
   display: flex;
   flex: 1;
-  font-size: var(--f-tiny);
+  font-size: var(--ftiny);
   color: var(--grey);
   border: none;
 }

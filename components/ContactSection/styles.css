@@ -23,12 +23,12 @@
 .contact-text {
   font-family: "Coolvetica";
   text-transform: uppercase;
-  font-size: var(--f-lg);
+  font-size: var(--flg);
   text-shadow: var(--text-glow);
 }
 
 .contact-description-text {
-  font-size: var(--f-xs);
+  font-size: var(--fxs);
   color: var(--grey);
 }
 
@@ -41,7 +41,7 @@
 .social-text {
   font-family: "Coolvetica";
   text-transform: uppercase;
-  font-size: var(--f-sm);
+  font-size: var(--fsm);
   color: var(--grey);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .contact-form-text {
-  font-size: var(--f-sm);
+  font-size: var(--fsm);
 }
 
 @media screen and (max-width: 940px) {

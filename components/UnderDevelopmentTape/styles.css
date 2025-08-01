@@ -23,7 +23,7 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   text-wrap: nowrap;
-  font-size: var(--f-tiny);
+  font-size: var(--ftiny);
   color: var(--charcoal);
   font-weight: 100;
 }

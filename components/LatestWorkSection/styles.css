@@ -6,7 +6,7 @@
 
 .latest-work-text {
   font-family: "Coolvetica";
-  font-size: var(--f-huge);
+  font-size: var(--fhuge);
   font-weight: 100;
   line-height: 100%;
   text-shadow: var(--text-glow);
@@ -41,7 +41,7 @@
 .project-header-text {
   font-family: "Coolvetica";
   text-transform: uppercase;
-  font-size: var(--f-md);
+  font-size: var(--fmd);
   font-weight: 100;
 }
 
@@ -49,7 +49,7 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   color: var(--grey);
-  font-size: var(--f-sm);
+  font-size: var(--fsm);
   font-weight: 100;
 }
 
@@ -64,7 +64,7 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   color: var(--grey);
-  font-size: var(--f-xs);
+  font-size: var(--fxs);
   font-weight: 100;
 }
 
