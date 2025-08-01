@@ -2,11 +2,14 @@ import React from "react";
 import Image from "next/image";
 import "./styles.css";
 import { HeroLight } from "./HeroLight";
+import { UnderDevelopmentTape } from "../UnderDevelopmentTape";
 
 export function HeroSection() {
   return (
     <>
       <HeroLight />
+      <UnderDevelopmentTape rotation={6} />
+      <UnderDevelopmentTape rotation={-22} />
       <section title="Hero Section" className="hero-section">
         <h1 className="hidden">{`Ricardo Sousa's Web Portfolio`}</h1>
 

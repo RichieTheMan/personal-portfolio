@@ -42,9 +42,12 @@
 
 .skills-text {
   font-size: var(--f-lg);
-  text-shadow: var(--text-glow);
+  /* text-shadow: var(--text-glow); */
 
   text-align: center;
+
+  animation: light-flicker 2s linear forwards;
+  animation-delay: 0.4s;
 }
 
 .hero-light-frame {
@@ -57,7 +60,7 @@
   bottom: 0;
   z-index: -1;
 
-  animation: light-up 0.5s ease-in forwards;
+  animation: light-up 0.8s ease forwards;
   animation-delay: 0.1s;
 }
 
@@ -120,12 +123,40 @@
 
 @keyframes light-up {
   0% {
-    transform: translateY(-50%);
-    opacity: 0;
+    opacity: 0.1;
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes light-flicker {
+  0% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  34% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  34.02% {
+    text-shadow: var(--text-glow);
+  }
+  40% {
+    text-shadow: var(--text-glow);
+  }
+  40.02% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  45.9% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  45.92% {
+    text-shadow: var(--text-glow);
+  }
+  72% {
+    text-shadow: var(--text-glow);
+  }
+  100% {
+    text-shadow: var(--text-glow);
   }
 }
 

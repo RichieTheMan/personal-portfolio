@@ -26,6 +26,7 @@
 
   /* Colors */
   --sky-blue: #2b83e8;
+  --sky-blue-40: #2b83e840;
 
   --stone: #474747;
   --dust: #2b2b2b;
@@ -38,6 +39,7 @@
   --grey-10: #c4c5cd10;
 
   --white: white;
+  --white-60: #ffffff60;
   --white-40: #ffffff40;
   --white-10: #ffffff10;
 
@@ -63,10 +65,11 @@
   /* Effects */
   --basic-drop-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.25);
   --basic-inset-shadow: inset 0 4px 24px hsla(0, 0%, 0%, 0.25);
+  --hard-drop-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.6);
 
   --glass-inset-glow: inset 0 0 10px var(--grey);
-
-  --text-glow: 0 0 30px var(--white-40);
+  --blue-glow: 0 0 200px var(--sky-blue-40);
+  --text-glow: 0 0 30px var(--white-60);
 
   --glass-blur: blur(40px);
 }

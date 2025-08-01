@@ -62,6 +62,7 @@ body {
   justify-content: space-between;
   font-family: "OpenSans";
   color: var(--white);
+  overflow-x: hidden;
 }
 
 main {
