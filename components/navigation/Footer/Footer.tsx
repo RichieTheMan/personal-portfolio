@@ -3,8 +3,15 @@ import "./styles.css";
 import Image from "next/image";
 import { ExternalLink } from "../../links/ExternalLink";
 import { Link } from "../../links/Link";
+import lastUpdated from "../../../scripts/last-updated.json";
 
 export function Footer() {
+  const updatedDate = new Date(lastUpdated.date).toLocaleString("en-US", {
+    dateStyle: "long",
+    timeStyle: "short",
+    timeZone: "Europe/Lisbon",
+  });
+
   return (
     <footer>
       <div className="left-section">
@@ -19,9 +26,10 @@ export function Footer() {
           <p className="footer-copyright-text">
             © 2024 Ricardo Sousa. All Rights Reserved
           </p>
-          <p className="soft-text">
-            Last updated on October 18, 2024, 06:00 PM WEST
+          <p id="update-label" className="soft-text">
+            Last updated on {updatedDate}
           </p>
+          {/* Last updated on October 18, 2024, 06:00 PM WEST */}
         </div>
       </div>
 
