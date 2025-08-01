@@ -11,10 +11,10 @@ export function BasicCard({
   children,
   className = "",
   style = {},
-  ...rest
+  ...props
 }: BasicCardProps) {
   return (
-    <div className={`basic-card-frame ${className}`} style={style} {...rest}>
+    <div className={`basic-card-frame ${className}`} style={style} {...props}>
       {children}
     </div>
   );

@@ -24,7 +24,7 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   font-size: var(--flg);
-  text-shadow: var(--text-glow);
+  /* text-shadow: var(--text-glow); */
 }
 
 .contact-description-text {
@@ -57,6 +57,8 @@
   gap: var(--md);
 
   box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+
+  /* animation: pulsate 4s ease-in-out infinite both; */
 }
 
 .contact-input-frame {
@@ -76,6 +78,21 @@
 .contact-form-text {
   font-size: var(--fsm);
 }
+
+/* @keyframes pulsate {
+  0% {
+    box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+  }
+  40% {
+    box-shadow: var(--basic-drop-shadow), 0 0 200px #2b83e830 !important;
+  }
+  45% {
+    box-shadow: var(--basic-drop-shadow), 0 0 200px #2b83e830 !important;
+  }
+  100% {
+    box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+  }
+} */
 
 @media screen and (max-width: 940px) {
 }

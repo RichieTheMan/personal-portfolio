@@ -2,18 +2,18 @@
 import React, { ChangeEvent, useState } from "react";
 import "./styles.css";
 
-type BasicInputProps = {
+type TextInputProps = {
   label: string;
   className?: string;
   error?: string;
 };
 
-export function BasicInput({
+export function TextInput({
   label,
   className = "",
   error,
-  ...rest
-}: BasicInputProps) {
+  ...props
+}: TextInputProps) {
   const [value, setValue] = useState("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -21,15 +21,15 @@ export function BasicInput({
   };
 
   return (
-    <div className={`basic-input-frame ${className}`}>
+    <div className={`input-frame ${className}`}>
       <label className="hidden">{label}</label>
       <input
         type="text"
-        className="basic-input"
+        className="text-input"
         value={value}
         placeholder={label}
         onChange={handleChange}
-        {...rest}
+        {...props}
       />
       {error && <div className="">{error}</div>}
     </div>

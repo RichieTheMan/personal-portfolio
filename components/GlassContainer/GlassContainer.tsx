@@ -11,13 +11,13 @@ export function GlassContainer({
   children,
   className = "",
   style = {},
-  ...rest
+  ...props
 }: GlassContainerProps) {
   return (
     <div
       className={`glass-container-frame ${className}`}
       style={style}
-      {...rest}
+      {...props}
     >
       {children}
     </div>

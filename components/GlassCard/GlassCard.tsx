@@ -11,10 +11,10 @@ export function GlassCard({
   children,
   className = "",
   style = {},
-  ...rest
+  ...props
 }: GlassCardProps) {
   return (
-    <div className={`glass-card-frame ${className}`} style={style} {...rest}>
+    <div className={`glass-card-frame ${className}`} style={style} {...props}>
       {children}
     </div>
   );

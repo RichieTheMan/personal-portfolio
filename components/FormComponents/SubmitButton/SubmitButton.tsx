@@ -10,13 +10,13 @@ type SubmitButtonProps = {
 export function SubmitButton({
   text = "Submit",
   className = "",
-  ...rest
+  ...props
 }: SubmitButtonProps) {
   return (
     <button
       className={`submit-button-frame ${className}`}
       type="submit"
-      {...rest}
+      {...props}
     >
       {text}
     </button>

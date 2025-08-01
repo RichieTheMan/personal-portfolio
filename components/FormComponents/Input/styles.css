@@ -1,6 +1,6 @@
-@import url("../../globals.css");
+@import url("../../../globals.css");
 
-.basic-input-frame {
+.input-frame {
   display: flex;
   padding: 10px 20px;
   border-radius: 20px;
@@ -9,11 +9,14 @@
   border: 1px solid var(--stone);
 }
 
-.basic-input {
+.text-input {
   font-family: "OpenSans";
   display: flex;
   flex: 1;
   font-size: var(--ftiny);
   color: var(--grey);
   border: none;
+
+  scrollbar-color: var(white) transparent;
+  scrollbar-width: thin;
 }
