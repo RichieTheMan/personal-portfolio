@@ -22,8 +22,8 @@ export function FlowmarkProjectCard() {
         <Image
           src={"/assets/images/devices/iphone-12-pro-max-silver-portrait.png"}
           alt="Iphone Placeholder Image"
-          width={670.34}
-          height={1346.42}
+          width={515.646}
+          height={1035.707}
           className="iphone-image"
         />
       </GlassCard>

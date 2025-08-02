@@ -10,10 +10,10 @@
 }
 
 .job-frame {
-  width: 460px;
+  width: 23.9583vw;
   display: flex;
   flex-direction: column;
-  gap: var(--md);
+  gap: var(--sm);
 }
 
 .time-text {

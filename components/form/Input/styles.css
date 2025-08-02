@@ -12,11 +12,8 @@
 .text-input {
   font-family: "OpenSans";
   display: flex;
-  flex: 1;
+  width: 100%;
   font-size: var(--ftiny);
   color: var(--grey);
   border: none;
-
-  scrollbar-color: var(white) transparent;
-  scrollbar-width: thin;
 }

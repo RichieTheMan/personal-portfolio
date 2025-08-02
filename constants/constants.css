@@ -1,24 +1,24 @@
 :root {
   /* Font Sizes */
-  --fhuge: 345.57px;
-  --fxl: 213.58px;
-  --flg: 132px;
-  --fmd: 81.58px;
-  --fsm: 50.42px;
-  --fxs: 31.16px;
-  --ftiny: 19.26px;
-  --fmicro: 12px;
+  --fhuge: 16.6138rem; /* 265.05px */
+  --fxl: 10.2685rem; /* 164.29px */
+  --flg: 6.3462rem; /* 101.54px */
+  --fmd: 3.9223rem; /* 62.75px */
+  --fsm: 2.4246rem; /* 38.78px */
+  --fxs: 1.4988rem; /* 23.97px */
+  --ftiny: 0.9268rem; /* 14.81px */
+  --fmicro: 0.5769rem; /* 9.23px */
 
-  /* Spacing */
-  --massive: 385px;
-  --huge: 240px;
-  --xl: 150px;
-  --lg: 94px;
-  --md: 59px;
-  --sm: 37px;
-  --xs: 23px;
-  --tiny: 14px;
-  --micro: 9px;
+  /* Spacing (converted at 1920px)*/
+  --massive: 20.052vw; /* 385px */
+  --huge: 12.5vw; /* 240px */
+  --xl: 7.8125vw; /* 150px */
+  --lg: 4.8958vw; /* 94px */
+  --md: 3.0729vw; /* 59px */
+  --sm: 1.9271vw; /* 37px */
+  --xs: 1.1979vw; /* 23px */
+  --tiny: 0.7292vw; /* 14px */
+  --micro: 0.4688vw; /* 9px */
 
   /* Border Radius */
   --card-radius: 100px;
@@ -71,5 +71,5 @@
   --blue-glow: 0 0 200px var(--sky-blue-40);
   --text-glow: 0 0 30px var(--white-60);
 
-  --glass-blur: blur(40px);
+  --glass-blur: blur(30px);
 }

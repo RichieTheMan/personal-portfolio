@@ -6,8 +6,8 @@ import { SubmitButton } from "../../form/SubmitButton";
 
 export function ContactForm() {
   return (
-    <form>
-      <BasicCard className="contact-form-frame">
+    <form className="contact-form-frame">
+      <BasicCard className="contact-form-inner-frame">
         <h2 className="contact-form-text">Contact</h2>
         <div className="contact-input-frame">
           <TextInput label="Name" />

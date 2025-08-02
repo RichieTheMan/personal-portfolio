@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: var(--xs);
   justify-content: space-between;
-  height: 675px;
+  height: 550px;
 }
 
 .project-header-frame {
@@ -79,8 +79,8 @@
 
 .iphone-image {
   position: absolute;
-  top: var(--huge);
-  right: calc(-1 * var(--lg));
+  top: 220px;
+  right: -80px;
 }
 
 @media screen and (max-width: 940px) {
