@@ -19,8 +19,8 @@ export function ContactSection() {
         <div className="social-frame">
           <h2 className="social-text">Social</h2>
           <div className="social-list-frame">
-            <LinkedInIconLink size={40} />
-            <MailIconLink size={40} />
+            <LinkedInIconLink size={38} />
+            <MailIconLink size={38} />
           </div>
         </div>
       </div>

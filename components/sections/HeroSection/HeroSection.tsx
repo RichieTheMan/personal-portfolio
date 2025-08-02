@@ -25,8 +25,8 @@ export function HeroSection() {
           <Image
             src="/assets/images/isla-logo.png"
             alt="ISLA Logo"
-            width={223.84}
-            height={93.2}
+            width={179.072}
+            height={74.56}
           />
         </div>
       </section>

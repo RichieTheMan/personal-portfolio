@@ -10,15 +10,15 @@
   --fmicro: 0.5769rem; /* 9.23px */
 
   /* Spacing (converted at 1920px)*/
-  --massive: 20.052vw; /* 385px */
-  --huge: 12.5vw; /* 240px */
-  --xl: 7.8125vw; /* 150px */
-  --lg: 4.8958vw; /* 94px */
-  --md: 3.0729vw; /* 59px */
-  --sm: 1.9271vw; /* 37px */
-  --xs: 1.1979vw; /* 23px */
-  --tiny: 0.7292vw; /* 14px */
-  --micro: 0.4688vw; /* 9px */
+  --massive: clamp(246.4px, 20.052vw, 554.56px); /* 385px */
+  --huge: clamp(153.6px, 12.5vw, 276.48px); /* 240px */
+  --xl: clamp(120px, 7.8125vw, 216px); /* 150px */
+  --lg: clamp(60.16px, 4.8958vw, 135.36px); /* 94px */
+  --md: clamp(37.76px, 3.0729vw, 85.12px); /* 59px */
+  --sm: clamp(23.68px, 1.9271vw, 42.56px); /* 37px */
+  --xs: clamp(14.72px, 1.1979vw, 27.68px); /* 23px */
+  --tiny: clamp(8.96px, 0.7292vw, 16.96px); /* 14px */
+  --micro: clamp(5.76px, 0.4688vw, 10.72px); /* 9px */
 
   /* Border Radius */
   --card-radius: 100px;
@@ -28,20 +28,21 @@
   --sky-blue: #2b83e8;
   --sky-blue-40: #2b83e840;
 
-  --stone: #474747;
-  --dust: #2b2b2b;
-  --smoke: #252525;
-  --deep-smoke: #1d1d1d;
-  --charcoal: #181919;
+  --white: white;
+  --white-60: #ffffff60;
+  --white-40: #ffffff40;
+  --white-10: #ffffff10;
 
   --grey: #c4c5cd;
   --grey-40: #c4c5cd40;
   --grey-10: #c4c5cd10;
 
-  --white: white;
-  --white-60: #ffffff60;
-  --white-40: #ffffff40;
-  --white-10: #ffffff10;
+  --steel: #9e9e9e;
+  --stone: #474747;
+  --dust: #2b2b2b;
+  --smoke: #252525;
+  --deep-smoke: #1d1d1d;
+  --charcoal: #181919;
 
   /* Gradients */
   --glass-gradient: linear-gradient(
@@ -63,9 +64,9 @@
   );
 
   /* Effects */
-  --basic-drop-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.25);
-  --basic-inset-shadow: inset 0 4px 24px hsla(0, 0%, 0%, 0.25);
-  --hard-drop-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.6);
+  --basic-drop-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.3);
+  --basic-inset-shadow: inset 0 4px 20px hsla(0, 0%, 0%, 0.3);
+  --hard-drop-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.6);
 
   --glass-inset-glow: inset 0 0 10px var(--grey);
   --blue-glow: 0 0 200px var(--sky-blue-40);

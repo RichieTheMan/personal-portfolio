@@ -44,16 +44,16 @@ function NavBarContent() {
         className="logo"
         src="/assets/svgs/logo.svg"
         alt="Ricardo Sousa's Logo"
-        width={28}
-        height={28}
+        width={24}
+        height={24}
       />
       <GlassContainer className="nav-section center" style={{ zIndex: 999 }}>
         <NavButton text="Work" href="/" />
         <NavButton text="About" href="/information" />
       </GlassContainer>
       <div className="nav-section">
-        <LinkedInIconLink size={22} />
-        <MailIconLink size={22} />
+        <LinkedInIconLink size={20} />
+        <MailIconLink size={20} />
       </div>
     </nav>
   );

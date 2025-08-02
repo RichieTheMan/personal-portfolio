@@ -1,6 +1,6 @@
 import "@/globals.css";
 
-export default function FlowmarkProjectPage() {
+export default function AboutPage() {
   return (
     <>
       <video width="30%" autoPlay muted loop playsInline>

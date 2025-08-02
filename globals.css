@@ -69,6 +69,7 @@ main {
   flex: 1;
   flex-direction: column;
   gap: var(--huge);
+  margin-bottom: var(--huge);
 }
 
 .bounding-box {
