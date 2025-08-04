@@ -1,0 +1,39 @@
+.navbar {
+  padding: var(--sm) var(--xl);
+  position: sticky;
+  z-index: 900;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navRoutesFrame,
+.navSocialsFrame {
+  display: flex;
+  gap: var(--sm);
+}
+
+.navRoutesFrame {
+  z-index: 998;
+}
+
+.dropdownMenuButton {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+}
+
+@media screen and (max-width: 620px) {
+  .navSocialsFrame,
+  .navRoutesFrame {
+    display: none !important;
+  }
+  .logo {
+    margin: 5px;
+    position: initial;
+  }
+  .dropdownMenuButton {
+    display: initial;
+  }
+}
