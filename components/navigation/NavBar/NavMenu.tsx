@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { ExternalLink } from "../../links/ExternalLink";
-import { Link } from "../../links/Link";
 import styles from "./NavMenu.module.css";
 import { useNavbarContext } from "./NavbarContext";
+import { Link } from "@/components/links/Link";
+import { ExternalLink } from "@/components/links/ExternalLink";
 
 export function NavMenu() {
   const [modalRoot, setModalRoot] = useState<HTMLElement | null>(null);
