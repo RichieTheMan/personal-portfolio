@@ -1,33 +1,31 @@
-@import url("../../../styles/globals.css");
-
-.job-history-section {
+.jobHistorySection {
   margin-inline: var(--huge);
 }
 
-.job-history-frame {
+.jobHistoryFrame {
   padding: var(--lg) var(--xl) !important;
   justify-content: space-between;
 }
 
-.job-frame {
+.jobFrame {
   width: 23.9583vw;
   display: flex;
   flex-direction: column;
   gap: var(--sm);
 }
 
-.time-text {
+.timeText {
   font-family: "Coolvetica";
   text-transform: uppercase;
   color: var(--grey);
   font-size: var(--fsm);
 }
 
-.role-text {
+.roleText {
   font-size: var(--fxs);
 }
 
-.company-link {
+.companyLink {
   font-size: var(--fxs);
   text-decoration: underline dotted var(--white);
   text-underline-position: under;

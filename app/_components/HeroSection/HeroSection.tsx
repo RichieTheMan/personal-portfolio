@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import "./styles.css";
+import styles from "./HeroSection.module.css";
 import { HeroLight } from "./HeroLight";
-import { UnderDevTape } from "../../feedback/UnderDevTape";
+import { UnderDevTape } from "../../../components/feedback/UnderDevTape";
 import { Section } from "@/components/layout";
 
 export function HeroSection() {
@@ -11,15 +11,15 @@ export function HeroSection() {
       <HeroLight />
       <UnderDevTape rotation={6} />
       <UnderDevTape rotation={-22} />
-      <Section className="hero-section">
-        <div className="hero-main-frame">
-          <h2 className="name-text">Ricardo Sousa</h2>
-          <h3 className="skills-text">
+      <Section className={styles.heroSection}>
+        <div className={styles.heroMainFrame}>
+          <h2 className={styles.nameText}>Ricardo Sousa</h2>
+          <h3 className={styles.skillsText}>
             Front-End Developer & Self-Taught Designer
           </h3>
         </div>
 
-        <div className="former-frame">
+        <div className={styles.formerFrame}>
           <p>Former student at</p>
           <Image
             src="/assets/images/isla-logo.png"

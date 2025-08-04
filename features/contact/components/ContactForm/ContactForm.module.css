@@ -1,0 +1,47 @@
+.contactFormFrame {
+  display: flex;
+  flex-direction: column;
+  flex: 1.2;
+}
+
+.contactFormInnerFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  flex: 1;
+
+  animation: pulsate 4s ease-in-out infinite both;
+}
+
+.contactInputFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+
+  cursor: text;
+}
+
+.contactInputRow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}
+
+.contactFormText {
+  font-size: var(--fsm);
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+  }
+  40% {
+    box-shadow: var(--basic-drop-shadow), 0 0 200px #2b83e830 !important;
+  }
+  45% {
+    box-shadow: var(--basic-drop-shadow), 0 0 200px #2b83e830 !important;
+  }
+  100% {
+    box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+  }
+}

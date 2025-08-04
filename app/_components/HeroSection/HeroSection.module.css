@@ -1,0 +1,75 @@
+.heroSection {
+  margin-inline: var(--huge);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: var(--lg);
+  align-items: center;
+  margin-top: var(--lg);
+}
+
+.heroMainFrame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.formerFrame {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: var(--sm);
+  align-items: center;
+}
+
+.nameText {
+  font-family: "Coolvetica";
+  font-size: var(--flg);
+  color: var(--grey);
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+
+  mix-blend-mode: overlay;
+}
+
+.skillsText {
+  font-size: var(--flg);
+  /* text-shadow: var(--text-glow); */
+
+  text-align: center;
+
+  animation: light-flicker 0.3s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes light-flicker {
+  0% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  0.02% {
+    text-shadow: var(--text-glow);
+  }
+  30% {
+    text-shadow: var(--text-glow);
+  }
+  30.02% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  80% {
+    text-shadow: 0 0 30px #ffffff00;
+  }
+  80.02% {
+    text-shadow: var(--text-glow);
+  }
+  100% {
+    text-shadow: var(--text-glow);
+  }
+}
+
+@media screen and (max-width: 940px) {
+}
+
+@media screen and (max-width: 620px) {
+}

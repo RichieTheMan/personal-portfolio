@@ -1,0 +1,51 @@
+.contactSection {
+  margin-inline: var(--huge);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: var(--lg);
+}
+
+.contactTextFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.contactHeaderFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
+
+.contactText {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--flg);
+  /* text-shadow: var(--text-glow); */
+}
+
+.contactDescriptionText {
+  font-size: var(--fxs);
+  color: var(--grey);
+}
+
+.socialFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+}
+
+.socialText {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--fsm);
+  color: var(--grey);
+}
+
+.socialListFrame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}

@@ -1,15 +1,15 @@
 import React from "react";
-import "./styles.css";
+import styles from "./LatestWorkSection.module.css";
 import { FlowmarkProjectCard } from "./FlowmarkProjectCard";
 import { Section } from "@/components/layout";
 import { Divisor } from "@/components/ui";
 
-export function LatestWorkSection() {
+export default function LatestWorkSection() {
   return (
-    <Section className="latest-work-section">
-      <h2 className="latest-work-text">Latest Work</h2>
+    <Section className={styles.latestWorkSection}>
+      <h2 className={styles.latestWorkText}>Latest Work</h2>
 
-      <div className="project-list-frame">
+      <div className={styles.projectListFrame}>
         <FlowmarkProjectCard />
         <Divisor />
       </div>
