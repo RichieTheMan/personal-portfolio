@@ -1,14 +1,14 @@
 import React from "react";
 import "./styles.css";
-import { BasicCard } from "../../wrappers/BasicCard";
+import { Section } from "@/components/layout";
+import { BasicCard } from "@/components/wrappers/BasicCard";
 
 export function JobHistorySection() {
   return (
-    <section title="Job History" className="job-history-section">
-      <h1 className="hidden">Job History</h1>
+    <Section className="job-history-section" srHeader="Job History">
       <BasicCard className="job-history-frame">
         <div className="job-frame">
-          <span className="time-text">Current</span>
+          <h3 className="time-text">Current</h3>
           <div className="status-content-frame">
             <p className="role-text">Working as mobile developer at</p>
             <a className="company-link">MobilePT</a>
@@ -16,13 +16,13 @@ export function JobHistorySection() {
         </div>
 
         <div className="job-frame">
-          <span className="time-text">Past</span>
+          <h3 className="time-text">Past</h3>
           <div className="status-content-frame">
             <p className="role-text">Intern at</p>
             <a className="company-link">Facetrick</a>
           </div>
         </div>
       </BasicCard>
-    </section>
+    </Section>
   );
 }

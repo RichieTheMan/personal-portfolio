@@ -1,4 +1,4 @@
-@import url("../../../globals.css");
+@import url("../../../styles/globals.css");
 
 .contact-section {
   margin-inline: var(--huge);
@@ -63,9 +63,9 @@
   gap: var(--md);
   flex: 1;
 
-  box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
+  /* box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important; */
 
-  /* animation: pulsate 4s ease-in-out infinite both; */
+  animation: pulsate 4s ease-in-out infinite both;
 }
 
 .contact-input-frame {
@@ -86,7 +86,7 @@
   font-size: var(--fsm);
 }
 
-/* @keyframes pulsate {
+@keyframes pulsate {
   0% {
     box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
   }
@@ -99,7 +99,7 @@
   100% {
     box-shadow: var(--basic-drop-shadow), var(--blue-glow) !important;
   }
-} */
+}
 
 @media screen and (max-width: 940px) {
 }

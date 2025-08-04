@@ -25,6 +25,7 @@ export function TextInput({
       <label className="hidden">{label}</label>
       <input
         type="text"
+        name={label.toLowerCase()}
         className="text-input"
         value={value}
         placeholder={label}

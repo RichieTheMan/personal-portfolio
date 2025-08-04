@@ -1,15 +1,16 @@
 import React from "react";
 import "./styles.css";
-import { LinkedInIconLink } from "../../links/LinkedInIconLink";
-import { MailIconLink } from "../../links/MailIconLink";
 import { ContactForm } from "./ContactForm";
+import { LinkedInIconLink } from "@/components/links/LinkedInIconLink";
+import { GithubLink } from "@/components/links/GithubLink";
+import { Section } from "@/components/layout";
 
 export function ContactSection() {
   return (
-    <section title="Contact Me" className="contact-section">
+    <Section className="contact-section">
       <div className="contact-text-frame">
         <div className="contact-header-frame">
-          <h1 className="contact-text">{`Let's Stay in Touch`}</h1>
+          <h2 className="contact-text">{`Let's Stay in Touch`}</h2>
           <p className="contact-description-text">
             Whether you have a project idea or need a front-end developer, feel
             free to drop a message in the contact form.
@@ -17,14 +18,14 @@ export function ContactSection() {
         </div>
 
         <div className="social-frame">
-          <h2 className="social-text">Social</h2>
+          <h3 className="social-text">Social</h3>
           <div className="social-list-frame">
             <LinkedInIconLink size={38} />
-            <MailIconLink size={38} />
+            <GithubLink size={38} />
           </div>
         </div>
       </div>
       <ContactForm />
-    </section>
+    </Section>
   );
 }

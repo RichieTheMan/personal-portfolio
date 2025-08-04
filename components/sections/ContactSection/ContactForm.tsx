@@ -8,7 +8,7 @@ export function ContactForm() {
   return (
     <form className="contact-form-frame">
       <BasicCard className="contact-form-inner-frame">
-        <h2 className="contact-form-text">Contact</h2>
+        <h3 className="contact-form-text">Contact</h3>
         <div className="contact-input-frame">
           <TextInput label="Name" />
           <TextInput label="Email" />

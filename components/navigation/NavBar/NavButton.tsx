@@ -1,4 +1,4 @@
-import "./styles.css";
+import styles from "./NavButton.module.css";
 import { usePathname, useRouter } from "next/navigation";
 
 type NavButtonProps = {
@@ -12,7 +12,7 @@ export function NavButton({ text, href }: NavButtonProps) {
 
   return (
     <button
-      className={path != href ? "nav-button" : "nav-button-active"}
+      className={path != href ? styles.navButton : styles.navButtonActive}
       onClick={() => router.push(href)}
     >
       {text}

@@ -9,10 +9,10 @@ export function FlowmarkProjectCard() {
     <Link href="/project/flowmark">
       <GlassCard className="project-frame">
         <div className="project-header-frame">
-          <h2 className="project-header-text">
+          <h3 className="project-header-text">
             Simplifying the Academic World
-          </h2>
-          <h3 className="project-type-text">Degree Final Year Project</h3>
+          </h3>
+          <h4 className="project-type-text">Degree Final Year Project</h4>
         </div>
         <div className="project-role-list-frame">
           <span className="project-role-text">Mobile Dev</span>

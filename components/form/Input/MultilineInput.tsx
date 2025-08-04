@@ -30,6 +30,7 @@ export function MultilineInput({
       <textarea
         rows={rows}
         className="text-input"
+        name={label.toLowerCase()}
         value={value}
         maxLength={length}
         placeholder={`${label} (max: ${length} letters)`}

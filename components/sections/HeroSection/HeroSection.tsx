@@ -3,6 +3,7 @@ import Image from "next/image";
 import "./styles.css";
 import { HeroLight } from "./HeroLight";
 import { UnderDevelopmentTape } from "../../UnderDevelopmentTape";
+import { Section } from "@/components/layout";
 
 export function HeroSection() {
   return (
@@ -10,9 +11,7 @@ export function HeroSection() {
       <HeroLight />
       <UnderDevelopmentTape rotation={6} />
       <UnderDevelopmentTape rotation={-22} />
-      <section title="Hero Section" className="hero-section">
-        <h1 className="hidden">{`Ricardo Sousa's Web Portfolio`}</h1>
-
+      <Section className="hero-section">
         <div className="hero-main-frame">
           <h2 className="name-text">Ricardo Sousa</h2>
           <h2 className="skills-text">
@@ -29,7 +28,7 @@ export function HeroSection() {
             height={74.56}
           />
         </div>
-      </section>
+      </Section>
     </>
   );
 }

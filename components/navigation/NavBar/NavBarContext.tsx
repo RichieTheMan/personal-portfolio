@@ -1,27 +1,27 @@
 import React, { createContext, useContext, useState } from "react";
 
-type NavBarContextProps = {
+type NavbarContextProps = {
   isNavMenuShowing: boolean;
   setIsNavMenuShowing: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const NavBarContext = createContext<NavBarContextProps>({
+const NavbarContext = createContext<NavbarContextProps>({
   isNavMenuShowing: false,
   setIsNavMenuShowing: () => {},
 });
 
-export function NavBarProvider({ children }: { children: React.ReactNode }) {
+export function NavbarProvider({ children }: { children: React.ReactNode }) {
   const [isNavMenuShowing, setIsNavMenuShowing] = useState<boolean>(false);
 
   return (
-    <NavBarContext.Provider value={{ isNavMenuShowing, setIsNavMenuShowing }}>
+    <NavbarContext.Provider value={{ isNavMenuShowing, setIsNavMenuShowing }}>
       {children}
-    </NavBarContext.Provider>
+    </NavbarContext.Provider>
   );
 }
 
-export const useNavBarContext = () => {
-  const { isNavMenuShowing, setIsNavMenuShowing } = useContext(NavBarContext);
+export const useNavbarContext = () => {
+  const { isNavMenuShowing, setIsNavMenuShowing } = useContext(NavbarContext);
 
   const showNavMenu = () => {
     setIsNavMenuShowing(true);

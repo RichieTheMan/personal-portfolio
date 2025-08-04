@@ -1,0 +1,39 @@
+.footer {
+  padding: var(--lg) var(--huge);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.siteInfoFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.linkFrame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--lg);
+}
+
+.copyrightText {
+  font-family: "OpenSans";
+  font-size: var(--ftiny);
+  color: var(--white);
+}
+
+.lastUpdateDateText,
+.linkCategoryText {
+  font-family: "OpenSans";
+  text-transform: uppercase;
+  font-size: var(--fmicro);
+  font-weight: normal;
+  color: var(--grey);
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 620px) {
+}

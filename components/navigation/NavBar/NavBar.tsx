@@ -1,21 +1,21 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import "./styles.css";
+import styles from "./Navbar.module.css";
 import { NavButton } from "./NavButton";
 import { NavMenu } from "./NavMenu";
-import { NavBarProvider, useNavBarContext } from "./NavBarContext";
 import { GlassContainer } from "../../wrappers/GlassContainer";
 import { LinkedInIconLink } from "../../links/LinkedInIconLink";
-import { MailIconLink } from "../../links/MailIconLink";
+import { NavbarProvider, useNavbarContext } from "./NavbarContext";
+import { GithubLink } from "@/components/links/GithubLink";
 
-function NavBarContent() {
-  const { showNavMenu } = useNavBarContext();
+function NavbarContent() {
+  const { showNavMenu } = useNavbarContext();
 
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <NavMenu />
-      <button className="dropdown-menu-button" onClick={showNavMenu}>
+      <button className={styles.dropdownMenuButton} onClick={showNavMenu}>
         <svg
           width="30"
           height="30"
@@ -41,28 +41,28 @@ function NavBarContent() {
         </svg>
       </button>
       <Image
-        className="logo"
+        className={styles.logo}
         src="/assets/svgs/logo.svg"
         alt="Ricardo Sousa's Logo"
         width={24}
         height={24}
       />
-      <GlassContainer className="nav-section center" style={{ zIndex: 999 }}>
+      <GlassContainer className={`${styles.navRoutesFrame} abs-center`}>
         <NavButton text="Work" href="/" />
         <NavButton text="About" href="/information" />
       </GlassContainer>
-      <div className="nav-section">
+      <div className={styles.navSocialsFrame}>
         <LinkedInIconLink size={20} />
-        <MailIconLink size={20} />
+        <GithubLink size={20} />
       </div>
     </nav>
   );
 }
 
-export function NavBar() {
+export default function Navbar() {
   return (
-    <NavBarProvider>
-      <NavBarContent />
-    </NavBarProvider>
+    <NavbarProvider>
+      <NavbarContent />
+    </NavbarProvider>
   );
 }

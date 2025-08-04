@@ -1,24 +1,24 @@
 :root {
   /* Font Sizes */
-  --fhuge: 16.6138rem; /* 265.05px */
-  --fxl: 10.2685rem; /* 164.29px */
-  --flg: 6.3462rem; /* 101.54px */
-  --fmd: 3.9223rem; /* 62.75px */
-  --fsm: 2.4246rem; /* 38.78px */
-  --fxs: 1.4988rem; /* 23.97px */
-  --ftiny: 0.9268rem; /* 14.81px */
-  --fmicro: 0.5769rem; /* 9.23px */
+  --fhuge: 16.6138rem;
+  --fxl: 10.2685rem;
+  --flg: 6.3462rem;
+  --fmd: 3.9223rem;
+  --fsm: 2.4246rem;
+  --fxs: 1.4988rem;
+  --ftiny: 0.9268rem;
+  --fmicro: 0.5769rem;
 
-  /* Spacing (converted at 1920px)*/
-  --massive: clamp(246.4px, 20.052vw, 554.56px); /* 385px */
-  --huge: clamp(153.6px, 12.5vw, 276.48px); /* 240px */
-  --xl: clamp(120px, 7.8125vw, 216px); /* 150px */
-  --lg: clamp(60.16px, 4.8958vw, 135.36px); /* 94px */
-  --md: clamp(37.76px, 3.0729vw, 85.12px); /* 59px */
-  --sm: clamp(23.68px, 1.9271vw, 42.56px); /* 37px */
-  --xs: clamp(14.72px, 1.1979vw, 27.68px); /* 23px */
-  --tiny: clamp(8.96px, 0.7292vw, 16.96px); /* 14px */
-  --micro: clamp(5.76px, 0.4688vw, 10.72px); /* 9px */
+  /* Spacing */
+  --massive: clamp(246.4px, 20.052vw, 554.56px);
+  --huge: clamp(153.6px, 12.5vw, 276.48px);
+  --xl: clamp(120px, 7.8125vw, 216px);
+  --lg: clamp(60.16px, 4.8958vw, 135.36px);
+  --md: clamp(37.76px, 3.0729vw, 85.12px);
+  --sm: clamp(23.68px, 1.9271vw, 42.56px);
+  --xs: clamp(14.72px, 1.1979vw, 27.68px);
+  --tiny: clamp(8.96px, 0.7292vw, 16.96px);
+  --micro: clamp(5.76px, 0.4688vw, 10.72px);
 
   /* Border Radius */
   --card-radius: 100px;
@@ -26,6 +26,7 @@
 
   /* Colors */
   --sky-blue: #2b83e8;
+  --sky-blue-60: #2b83e860;
   --sky-blue-40: #2b83e840;
 
   --white: white;
@@ -69,7 +70,7 @@
   --hard-drop-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.6);
 
   --glass-inset-glow: inset 0 0 10px var(--grey);
-  --blue-glow: 0 0 200px var(--sky-blue-40);
+  --blue-glow: 0 0 200px var(--sky-blue-60);
   --text-glow: 0 0 30px var(--white-60);
 
   --glass-blur: blur(30px);

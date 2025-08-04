@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { ExternalLink } from "../../links/ExternalLink";
 import { Link } from "../../links/Link";
-import "./styles.css";
-import { useNavBarContext } from "./NavBarContext";
+import styles from "./NavMenu.module.css";
+import { useNavbarContext } from "./NavbarContext";
 
 export function NavMenu() {
   const [modalRoot, setModalRoot] = useState<HTMLElement | null>(null);
-  const { isNavMenuShowing, hideNavMenu } = useNavBarContext();
+  const { isNavMenuShowing, hideNavMenu } = useNavbarContext();
 
   useEffect(() => {
     const root = document.getElementById("modal-root");
@@ -19,8 +19,10 @@ export function NavMenu() {
   }
 
   return createPortal(
-    <div className={isNavMenuShowing ? "nav-menu" : "nav-menu hidden"}>
-      <button className="dropdown-menu-button" onClick={() => hideNavMenu()}>
+    <div
+      className={isNavMenuShowing ? styles.NavMenu : `${styles.NavMenu} hidden`}
+    >
+      <button onClick={() => hideNavMenu()}>
         <svg
           width="30"
           height="30"
