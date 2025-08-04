@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import styles from "./NavMenu.module.css";
 import { useNavbarContext } from "./NavbarContext";
-import { Link } from "@/components/links/Link";
-import { ExternalLink } from "@/components/links/ExternalLink";
+import { ExternalLink, TextLink } from "@/components/ui";
 
 export function NavMenu() {
   const [modalRoot, setModalRoot] = useState<HTMLElement | null>(null);
@@ -48,14 +47,13 @@ export function NavMenu() {
         </svg>
       </button>
       <div className="gap-xxs column">
-        <Link text="Work" href="/" />
-        <Link text="Freelance" href="/freelance" />
-        <Link text="About Me" href="/information" />
+        <TextLink text="Work" href="/" />
+        <TextLink text="Freelance" href="/freelance" />
+        <TextLink text="About Me" href="/information" />
       </div>
       <div className="gap-xxs column">
-        <ExternalLink text="Resume" href="/" />
         <ExternalLink text="LinkedIn" href="/" />
-        <ExternalLink text="Mail" href="/" />
+        <ExternalLink text="Github" href="/" />
       </div>
     </div>,
     modalRoot

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { GlassCard } from "../../wrappers/GlassCard";
+import { GlassCard } from "../../ui/GlassCard";
 import Image from "next/image";
 import Link from "next/link";
 

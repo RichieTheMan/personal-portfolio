@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles.css";
-import { BasicCard } from "../../wrappers/BasicCard";
-import { MultilineInput, TextInput } from "../../form/Input";
-import { SubmitButton } from "../../form/SubmitButton";
+import { MultilineInput, SubmitButton, TextInput } from "@/components/form";
+import { BasicCard } from "@/components/ui";
 
 export function ContactForm() {
   return (

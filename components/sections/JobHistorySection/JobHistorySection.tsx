@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { Section } from "@/components/layout";
-import { BasicCard } from "@/components/wrappers/BasicCard";
+import { BasicCard } from "@/components/ui/BasicCard";
 
 export function JobHistorySection() {
   return (

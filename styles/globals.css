@@ -132,27 +132,6 @@ h6 {
   font-weight: 100;
 }
 
-.icon-link {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.divisor {
-  height: 1px;
-  position: relative;
-  left: 0;
-  right: 0;
-  background: linear-gradient(
-    90deg,
-    #c4c5cd00 0%,
-    var(--grey) 50%,
-    #c4c5cd00 100%
-  );
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 18px;

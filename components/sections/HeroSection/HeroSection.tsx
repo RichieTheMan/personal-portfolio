@@ -2,21 +2,21 @@ import React from "react";
 import Image from "next/image";
 import "./styles.css";
 import { HeroLight } from "./HeroLight";
-import { UnderDevelopmentTape } from "../../UnderDevelopmentTape";
+import { UnderDevTape } from "../../feedback/UnderDevTape";
 import { Section } from "@/components/layout";
 
 export function HeroSection() {
   return (
     <>
       <HeroLight />
-      <UnderDevelopmentTape rotation={6} />
-      <UnderDevelopmentTape rotation={-22} />
+      <UnderDevTape rotation={6} />
+      <UnderDevTape rotation={-22} />
       <Section className="hero-section">
         <div className="hero-main-frame">
           <h2 className="name-text">Ricardo Sousa</h2>
-          <h2 className="skills-text">
+          <h3 className="skills-text">
             Front-End Developer & Self-Taught Designer
-          </h2>
+          </h3>
         </div>
 
         <div className="former-frame">

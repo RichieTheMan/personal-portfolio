@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import { FlowmarkProjectCard } from "./FlowmarkProjectCard";
 import { Section } from "@/components/layout";
+import { Divisor } from "@/components/ui";
 
 export function LatestWorkSection() {
   return (
@@ -10,7 +11,7 @@ export function LatestWorkSection() {
 
       <div className="project-list-frame">
         <FlowmarkProjectCard />
-        <div className="divisor" />
+        <Divisor />
       </div>
     </Section>
   );

@@ -1,6 +1,6 @@
 "use client";
 import React, { ChangeEvent, useState } from "react";
-import "./styles.css";
+import styles from "./Input.module.css";
 
 type MultilineInputProps = {
   label: string;
@@ -10,7 +10,7 @@ type MultilineInputProps = {
   length?: number;
 };
 
-export function MultilineInput({
+export default function MultilineInput({
   label,
   className = "",
   error,
@@ -25,11 +25,11 @@ export function MultilineInput({
   };
 
   return (
-    <div className={`input-frame ${className}`}>
-      <label className="hidden">{label}</label>
+    <div className={`${styles.inputFrame} ${className}`}>
+      <label className="sr-only">{label}</label>
       <textarea
         rows={rows}
-        className="text-input"
+        className={styles.textInput}
         name={label.toLowerCase()}
         value={value}
         maxLength={length}

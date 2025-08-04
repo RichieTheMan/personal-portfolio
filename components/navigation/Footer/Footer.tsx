@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
-import { ExternalLink } from "../../links/ExternalLink";
-import { Link } from "../../links/Link";
+import { ExternalLink, TextLink } from "@/components/ui";
 
 export default function Footer() {
   return (
@@ -28,8 +27,8 @@ export default function Footer() {
         <div className="gap-xs column">
           <h1 className={styles.linkCategoryText}>PAGES</h1>
           <div className="gap-micro column">
-            <Link text="Work" href="/" />
-            <Link text="About" href="/information" />
+            <TextLink text="Work" href="/" />
+            <TextLink text="About" href="/information" />
           </div>
         </div>
 
@@ -38,7 +37,7 @@ export default function Footer() {
           <div className="gap-micro column">
             <ExternalLink text="Resume" href="/" />
             <ExternalLink text="LinkedIn" href="/" />
-            <ExternalLink text="Mail" href="/" />
+            <ExternalLink text="Github" href="/" />
           </div>
         </div>
       </div>

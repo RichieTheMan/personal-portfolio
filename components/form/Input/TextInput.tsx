@@ -1,6 +1,6 @@
 "use client";
 import React, { ChangeEvent, useState } from "react";
-import "./styles.css";
+import styles from "./Input.module.css";
 
 type TextInputProps = {
   label: string;
@@ -8,7 +8,7 @@ type TextInputProps = {
   error?: string;
 };
 
-export function TextInput({
+export default function TextInput({
   label,
   className = "",
   error,
@@ -21,12 +21,12 @@ export function TextInput({
   };
 
   return (
-    <div className={`input-frame ${className}`}>
-      <label className="hidden">{label}</label>
+    <div className={`${styles.inputFrame} ${className}`}>
+      <label className="sr-only">{label}</label>
       <input
         type="text"
         name={label.toLowerCase()}
-        className="text-input"
+        className={styles.textInput}
         value={value}
         placeholder={label}
         onChange={handleChange}

@@ -1,20 +1,20 @@
 "use client";
 import React from "react";
-import "./styles.css";
+import styles from "./SubmitButton.module.css";
 
 type SubmitButtonProps = {
   text?: string;
   className?: string;
 };
 
-export function SubmitButton({
+export default function SubmitButton({
   text = "Submit",
   className = "",
   ...props
 }: SubmitButtonProps) {
   return (
     <button
-      className={`submit-button-frame ${className}`}
+      className={`${styles.submitButtonFrame} ${className}`}
       type="submit"
       {...props}
     >

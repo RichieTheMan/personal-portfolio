@@ -1,9 +1,8 @@
 import React from "react";
 import "./styles.css";
 import { ContactForm } from "./ContactForm";
-import { LinkedInIconLink } from "@/components/links/LinkedInIconLink";
-import { GithubLink } from "@/components/links/GithubLink";
 import { Section } from "@/components/layout";
+import { GithubLink, LinkedInLink } from "@/components/ui";
 
 export function ContactSection() {
   return (
@@ -20,7 +19,7 @@ export function ContactSection() {
         <div className="social-frame">
           <h3 className="social-text">Social</h3>
           <div className="social-list-frame">
-            <LinkedInIconLink size={38} />
+            <LinkedInLink size={38} />
             <GithubLink size={38} />
           </div>
         </div>

@@ -4,10 +4,8 @@ import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { NavButton } from "./NavButton";
 import { NavMenu } from "./NavMenu";
-import { GlassContainer } from "../../wrappers/GlassContainer";
-import { LinkedInIconLink } from "../../links/LinkedInIconLink";
 import { NavbarProvider, useNavbarContext } from "./NavbarContext";
-import { GithubLink } from "@/components/links/GithubLink";
+import { GithubLink, GlassContainer, LinkedInLink } from "@/components/ui";
 
 function NavbarContent() {
   const { showNavMenu } = useNavbarContext();
@@ -52,7 +50,7 @@ function NavbarContent() {
         <NavButton text="About" href="/information" />
       </GlassContainer>
       <div className={styles.navSocialsFrame}>
-        <LinkedInIconLink size={20} />
+        <LinkedInLink size={20} />
         <GithubLink size={20} />
       </div>
     </nav>
