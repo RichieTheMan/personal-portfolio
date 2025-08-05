@@ -1,43 +1,34 @@
-"use client";
-import React, { ChangeEvent, useState } from "react";
+import React from "react";
 import styles from "./Input.module.css";
 
 type MultilineInputProps = {
   label: string;
   className?: string;
+  placeholder: string;
   error?: string;
-  rows?: number;
-  length?: number;
-};
+} & React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export default function MultilineInput({
   label,
   className = "",
+  placeholder,
   error,
-  rows = 20,
-  length = 999,
+  maxLength,
   ...props
 }: MultilineInputProps) {
-  const [value, setValue] = useState("");
-
-  const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(e.target.value);
-  };
-
   return (
     <div className={`${styles.inputFrame} ${className}`}>
-      <label className="sr-only">{label}</label>
+      <label className={styles.labelText}>{label}</label>
       <textarea
-        rows={rows}
-        className={styles.textInput}
+        className={error ? styles.invalidInput : styles.textInput}
         name={label.toLowerCase()}
-        value={value}
-        maxLength={length}
-        placeholder={`${label} (max: ${length} letters)`}
-        onChange={handleChange}
+        placeholder={`${placeholder}${
+          maxLength && ` (max: ${maxLength} letters)`
+        }`}
+        maxLength={maxLength}
         {...props}
       />
-      {error && <div className="">{error}</div>}
+      {error && <div className={styles.errorText}>{error}</div>}
     </div>
   );
 }

@@ -9,7 +9,7 @@
   background-color: var(--grey-10);
   box-shadow: var(--basic-inset-shadow);
 
-  transition: 0.3s ease;
+  transition: var(--fade-transition);
 }
 
 .navButton:hover {
@@ -17,6 +17,8 @@
   text-shadow: var(--text-glow);
 
   background-color: var(--white-10);
+
+  transition: var(--fade-transition);
 }
 
 .navButtonActive {
@@ -33,7 +35,7 @@
 
   cursor: default;
 
-  transition: 1s ease;
+  transition: var(--fade-transition);
 }
 
 @media screen and (max-width: 940px) {

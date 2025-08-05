@@ -1,38 +1,30 @@
-"use client";
-import React, { ChangeEvent, useState } from "react";
+import React from "react";
 import styles from "./Input.module.css";
 
 type TextInputProps = {
   label: string;
+  placeholder: string;
   className?: string;
   error?: string;
-};
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 export default function TextInput({
   label,
+  placeholder,
   className = "",
   error,
   ...props
 }: TextInputProps) {
-  const [value, setValue] = useState("");
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
-  };
-
   return (
     <div className={`${styles.inputFrame} ${className}`}>
-      <label className="sr-only">{label}</label>
+      <label className={styles.labelText}>{label}</label>
       <input
         type="text"
-        name={label.toLowerCase()}
-        className={styles.textInput}
-        value={value}
-        placeholder={label}
-        onChange={handleChange}
+        className={error ? styles.invalidInput : styles.textInput}
+        placeholder={placeholder}
         {...props}
       />
-      {error && <div className="">{error}</div>}
+      {error && <div className={styles.errorText}>{error}</div>}
     </div>
   );
 }
