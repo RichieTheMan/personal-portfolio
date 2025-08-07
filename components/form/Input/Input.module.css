@@ -7,7 +7,7 @@
 .textInput {
   display: flex;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: var(--small-radius);
   background-color: var(--dust);
   box-shadow: var(--basic-inset-shadow);
   border: 1px solid var(--stone);
@@ -31,7 +31,7 @@
 .invalidInput {
   display: flex;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: var(--small-radius);
   background-color: var(--dust);
   box-shadow: inset 0 0px 20px hsla(0, 100%, 50%, 0.2);
   border: 1px solid var(--red);

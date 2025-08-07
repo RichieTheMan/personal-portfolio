@@ -1,0 +1,67 @@
+.heroLightFrame {
+  opacity: 0.8;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.lightMask {
+  width: 3106px;
+  height: 3106px;
+  mask: radial-gradient(circle at center, #000000 50%, #00000000 70%);
+  mask-repeat: no-repeat;
+  top: -2560px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.lightMainFrame {
+  background: radial-gradient(
+    circle at center,
+    var(--white-40) 40%,
+    #ffffff00 70%
+  );
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.lightOverlayFrame {
+  background: radial-gradient(circle at center, #9badb8 20%, #9badb850 70%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  mix-blend-mode: overlay;
+}
+
+.noiseMask {
+  width: 3106px;
+  height: 3106px;
+  mask: radial-gradient(circle at center, #ffffff00 40%, #ffffff90 70%);
+  mask-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  mix-blend-mode: overlay;
+}
+
+.noiseFrame {
+  width: 3106px;
+  height: 3106px;
+  background-image: url("../../../public/assets/images/textures/noise-texture.png");
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

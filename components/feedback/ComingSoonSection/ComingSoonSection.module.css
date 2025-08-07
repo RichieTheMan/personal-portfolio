@@ -1,0 +1,19 @@
+.comingSoonSection {
+  margin-inline: var(--huge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--lg);
+}
+
+.comingSoonText {
+  font-family: "Coolvetica";
+  font-size: var(--fxl);
+  color: var(--grey);
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+
+  mix-blend-mode: overlay;
+}

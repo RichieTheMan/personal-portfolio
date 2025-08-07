@@ -21,7 +21,8 @@
   --micro: clamp(5.76px, 0.4688vw, 10.72px);
 
   /* Border Radius */
-  --card-radius: 100px;
+  --card-radius: 70px;
+  --small-radius: 16px;
   --full-radius: 999px;
 
   /* Colors */
