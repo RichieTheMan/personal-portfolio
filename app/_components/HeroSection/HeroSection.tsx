@@ -1,20 +1,27 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 import { HeroLight } from "./HeroLight";
 import { UnderDevTape } from "../../../components/feedback/UnderDevTape";
 import { Section } from "@/components/layout";
+import useFirstSessionVisit from "@/features/contact/hooks/useFirstSessionVisit";
 
 export function HeroSection() {
+  const isFirstVisit = useFirstSessionVisit();
   return (
     <>
-      <HeroLight />
+      <HeroLight isLit={isFirstVisit} />
       <UnderDevTape rotation={6} />
       <UnderDevTape rotation={-22} />
       <Section className={styles.heroSection}>
         <div className={styles.heroMainFrame}>
           <h2 className={styles.nameText}>Ricardo Sousa</h2>
-          <h3 className={styles.skillsText}>
+          <h3
+            className={
+              isFirstVisit ? styles.skillsTextLightFlicker : styles.skillsText
+            }
+          >
             Front-End Developer & Self-Taught Designer
           </h3>
         </div>

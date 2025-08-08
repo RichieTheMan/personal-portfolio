@@ -11,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { SubmitedCard } from "../SubmitedCard";
+import Head from "next/head";
 
 const schema = z.object({
   name: z
@@ -64,60 +65,69 @@ export default function ContactForm() {
   };
 
   return (
-    <form className={styles.formFrame} onSubmit={handleSubmit(onSubmit)}>
-      {!isSubmitSuccessful && (
-        <BasicCard className={styles.cardFrame}>
-          <>
-            <h3 className={styles.formText}>Contact</h3>
-            <div
-              className={`${styles.inputFrame} ${
-                isSubmitSuccessful && "hidden"
-              }`}
-            >
-              <TextInput
-                {...register("name")}
-                label="Name"
-                placeholder="Your Name"
-                {...(isSubmitted && { error: errors.name?.message })}
-              />
-              <TextInput
-                {...register("email")}
-                label="Email (optional)"
-                placeholder="name@domain.com"
-                {...(isSubmitted && { error: errors.email?.message })}
-              />
-              <div className={styles.inputRow}>
+    <>
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/form-card-shade.png"
+        />
+      </Head>
+      <form className={styles.formFrame} onSubmit={handleSubmit(onSubmit)}>
+        {!isSubmitSuccessful && (
+          <BasicCard className={styles.cardFrame}>
+            <>
+              <h3 className={styles.formText}>Contact</h3>
+              <div
+                className={`${styles.inputFrame} ${
+                  isSubmitSuccessful && "hidden"
+                }`}
+              >
                 <TextInput
-                  {...register("company")}
-                  label="Company (optional)"
-                  placeholder="Company Name"
-                  {...(isSubmitted && { error: errors.company?.message })}
+                  {...register("name")}
+                  label="Name"
+                  placeholder="Your Name"
+                  {...(isSubmitted && { error: errors.name?.message })}
                 />
                 <TextInput
-                  {...register("subject")}
-                  label="Subject"
-                  placeholder="Subject"
-                  {...(isSubmitted && { error: errors.subject?.message })}
+                  {...register("email")}
+                  label="Email (optional)"
+                  placeholder="name@domain.com"
+                  {...(isSubmitted && { error: errors.email?.message })}
+                />
+                <div className={styles.inputRow}>
+                  <TextInput
+                    {...register("company")}
+                    label="Company (optional)"
+                    placeholder="Company Name"
+                    {...(isSubmitted && { error: errors.company?.message })}
+                  />
+                  <TextInput
+                    {...register("subject")}
+                    label="Subject"
+                    placeholder="Subject"
+                    {...(isSubmitted && { error: errors.subject?.message })}
+                  />
+                </div>
+                <MultilineInput
+                  {...register("message")}
+                  placeholder="Your Message"
+                  label="Message"
+                  rows={5}
+                  maxLength={320}
+                  {...(isSubmitted && { error: errors.message?.message })}
                 />
               </div>
-              <MultilineInput
-                {...register("message")}
-                placeholder="Your Message"
-                label="Message"
-                rows={5}
-                maxLength={320}
-                {...(isSubmitted && { error: errors.message?.message })}
+              <SubmitButton
+                text="Send"
+                loading={isSubmitting}
+                disabled={isSubmitted && !isValid}
               />
-            </div>
-            <SubmitButton
-              text="Send"
-              loading={isSubmitting}
-              disabled={isSubmitted && !isValid}
-            />
-          </>
-        </BasicCard>
-      )}
-      {isSubmitSuccessful && <SubmitedCard />}
-    </form>
+            </>
+          </BasicCard>
+        )}
+        {isSubmitSuccessful && <SubmitedCard />}
+      </form>
+    </>
   );
 }

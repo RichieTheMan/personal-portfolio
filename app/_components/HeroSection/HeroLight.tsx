@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
 import styles from "./HeroLight.module.css";
 
-export function HeroLight() {
+type HeroLightProps = {
+  isLit: boolean;
+};
+
+export function HeroLight({ isLit }: HeroLightProps) {
   return (
-    <div className={styles.heroLightFrame}>
+    <div className={isLit ? styles.lightFrameLightUp : styles.lightFrame}>
       <div className={styles.lightMask}>
         <div className={styles.lightMainFrame} />
         <div className={styles.lightOverlayFrame} />

@@ -34,11 +34,18 @@
   mix-blend-mode: overlay;
 }
 
+.skillsTextLightFlicker,
 .skillsText {
   font-size: var(--flg);
-  /* text-shadow: var(--text-glow); */
-
   text-align: center;
+}
+
+.skillsText {
+  text-shadow: var(--text-glow);
+}
+
+.skillsTextLightFlicker {
+  text-shadow: 0 0 30px #ffffff00;
 
   animation: light-flicker 0.3s linear forwards;
   animation-delay: 1s;
