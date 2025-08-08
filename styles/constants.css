@@ -77,6 +77,7 @@
   --text-glow: 0 0 30px var(--white-60);
 
   --glass-blur: blur(30px);
+  --layer-blur: blur(60px);
 
   /* Transitions */
   --fade-transition: 0.5s ease;

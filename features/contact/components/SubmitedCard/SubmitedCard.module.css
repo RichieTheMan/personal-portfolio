@@ -1,0 +1,41 @@
+.cardFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  animation: scale-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.075) forwards;
+}
+
+.titleText {
+  font-size: var(--fsm);
+}
+
+.subText {
+  font-size: var(--fxs);
+  color: var(--grey);
+  text-align: center;
+}
+
+.shadeImage {
+  position: absolute;
+  top: auto !important;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 50% !important;
+  filter: var(--layer-blur);
+
+  opacity: 0.8;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

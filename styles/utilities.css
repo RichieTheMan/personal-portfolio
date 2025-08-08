@@ -60,6 +60,10 @@
   display: none !important;
 }
 
+.invisible {
+  opacity: 0 !important;
+}
+
 .abs-center {
   position: absolute;
   left: 50%;

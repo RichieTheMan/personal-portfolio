@@ -1,10 +1,10 @@
-.contactFormFrame {
+.formFrame {
   display: flex;
   flex-direction: column;
   flex: 1.2;
 }
 
-.contactFormInnerFrame {
+.cardFrame {
   display: flex;
   flex-direction: column;
   gap: var(--md);
@@ -13,7 +13,7 @@
   animation: pulsate 4s ease-in-out infinite both;
 }
 
-.contactInputFrame {
+.inputFrame {
   display: flex;
   flex-direction: column;
   gap: var(--sm);
@@ -21,13 +21,13 @@
   cursor: text;
 }
 
-.contactInputRow {
+.inputRow {
   display: flex;
   flex-direction: row;
   gap: var(--sm);
 }
 
-.contactFormText {
+.formText {
   font-size: var(--fsm);
 }
 
