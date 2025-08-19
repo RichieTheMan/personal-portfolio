@@ -21,14 +21,12 @@
 
 .shadeImage {
   position: absolute;
-  top: auto !important;
-  right: 0;
-  left: 0;
   bottom: 0;
-  height: 50% !important;
+  width: 100%;
+  z-index: -1;
   filter: var(--layer-blur);
 
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 @keyframes scale-in {

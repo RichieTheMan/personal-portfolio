@@ -11,7 +11,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { SubmitedCard } from "../SubmitedCard";
-import Head from "next/head";
 
 const schema = z.object({
   name: z
@@ -66,13 +65,6 @@ export default function ContactForm() {
 
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/images/form-card-shade.png"
-        />
-      </Head>
       <form className={styles.formFrame} onSubmit={handleSubmit(onSubmit)}>
         {!isSubmitSuccessful && (
           <BasicCard className={styles.cardFrame}>
