@@ -5,13 +5,13 @@ import styles from "./HeroSection.module.css";
 import { HeroLight } from "./HeroLight";
 import { UnderDevTape } from "../../../components/feedback/UnderDevTape";
 import { Section } from "@/components/layout";
-import useFirstSessionVisit from "@/features/contact/hooks/useFirstSessionVisit";
+import { useVisitContext } from "@/contexts";
 
 export function HeroSection() {
-  const isFirstVisit = useFirstSessionVisit();
+  const { hasVisited } = useVisitContext();
   return (
     <>
-      <HeroLight isLit={isFirstVisit} />
+      <HeroLight isLit={!hasVisited} />
       <UnderDevTape rotation={6} />
       <UnderDevTape rotation={-22} />
       <Section className={styles.heroSection}>
@@ -19,7 +19,7 @@ export function HeroSection() {
           <h2 className={styles.nameText}>Ricardo Sousa</h2>
           <h3
             className={
-              isFirstVisit ? styles.skillsTextLightFlicker : styles.skillsText
+              !hasVisited ? styles.skillsTextLightFlicker : styles.skillsText
             }
           >
             Front-End Developer & Self-Taught Designer

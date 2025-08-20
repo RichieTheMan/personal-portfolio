@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components/navigation";
 import "@/styles/globals.css";
+import { VisitProvider } from "@/contexts";
 
 export const metadata: Metadata = {
   title: "Ricardo Sousa",
@@ -21,22 +22,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <div
-          id="modal-root"
-          style={{
-            position: "absolute",
-            zIndex: 999,
-            backgroundColor: "red",
-            top: 0,
-            bottom: 0,
-            right: 0,
-            left: 0,
-            display: "none",
-          }}
-        />
+        <VisitProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <div
+            id="modal-root"
+            style={{
+              position: "absolute",
+              zIndex: 999,
+              backgroundColor: "red",
+              top: 0,
+              bottom: 0,
+              right: 0,
+              left: 0,
+              display: "none",
+            }}
+          />
+        </VisitProvider>
       </body>
     </html>
   );
