@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./JobHistory.module.css";
+import styles from "./JobHistorySection.module.css";
 import { Section } from "@/components/layout";
 import { BasicCard } from "@/components/ui";
 

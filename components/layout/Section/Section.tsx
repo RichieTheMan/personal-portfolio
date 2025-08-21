@@ -3,7 +3,7 @@ import React from "react";
 type SectionProps = {
   srHeader?: string;
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function Section({

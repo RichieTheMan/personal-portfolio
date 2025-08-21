@@ -1,0 +1,24 @@
+.toolsSegment {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
+
+.toolListFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+}
+
+.toolListText {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--fsm);
+  color: var(--white);
+}
+
+.toolsFrame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}
