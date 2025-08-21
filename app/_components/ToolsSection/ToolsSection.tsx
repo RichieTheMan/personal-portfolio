@@ -1,26 +1,40 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./ToolsSection.module.css";
 import { Section } from "@/components/layout";
-import { BasicCard, GlassContainer, Icon } from "@/components/ui";
-import ToolCard from "./ToolCard";
 import ToolsByTypeSegment from "./ToolsByTypeSegment";
 import OtherToolsSegment from "./OtherToolsSegment";
 import ToolsByEndSegment from "./ToolsByEndSegment";
 
 export default function ToolsSection() {
+  const [isDefaultToggle, setIsDefaultToggle] = useState(true);
+
   return (
     <Section className={styles.toolsSection}>
       <div className={styles.headerFrame}>
         <h2 className={styles.toolsText}>My main Tools</h2>
         <div className={styles.toggleFrame}>
-          <span className={styles.toggleButton}>By End</span>
+          <button
+            className={
+              !isDefaultToggle ? styles.toggleButtonActive : styles.toggleButton
+            }
+            onClick={() => setIsDefaultToggle(false)}
+          >
+            By End
+          </button>
           <span className={styles.toggleDivisor}>{`/`}</span>
-          <span className={styles.toggleButtonActive}>By Type</span>
+          <button
+            className={
+              isDefaultToggle ? styles.toggleButtonActive : styles.toggleButton
+            }
+            onClick={() => setIsDefaultToggle(true)}
+          >
+            By Type
+          </button>
         </div>
       </div>
       <div className={styles.toolsFrame}>
-        {/* <ToolsByEndSegment /> */}
-        <ToolsByTypeSegment />
+        {!isDefaultToggle ? <ToolsByEndSegment /> : <ToolsByTypeSegment />}
         <OtherToolsSegment />
       </div>
     </Section>

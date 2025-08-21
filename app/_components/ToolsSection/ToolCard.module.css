@@ -1,7 +1,13 @@
+.toolCardSecondaryContainer,
 .toolCardContainer {
   width: var(--xl);
   height: var(--xl);
   border-radius: 30px !important;
+}
+
+.toolCardSecondaryContainer {
+  border-color: var(--stone) !important;
+  box-shadow: inset 0 0 10px var(--stone) !important;
 }
 
 .toolCard {

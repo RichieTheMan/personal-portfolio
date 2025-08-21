@@ -19,7 +19,7 @@ export default function OtherToolsSegment() {
           <ToolCard iconName="figma" />
           <ToolCard iconName="inkscape" />
           <ToolCard iconName="gimp" />
-          <ToolCard iconName="blender" />
+          <ToolCard iconName="blender" secondary />
         </div>
       </div>
     </div>

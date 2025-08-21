@@ -21,8 +21,8 @@ export default function ToolsByTypeSegment() {
           <ToolCard iconName="react" />
           <ToolCard iconName="next" />
           <ToolCard iconName="node" />
-          <ToolCard iconName="tailwind" />
-          <ToolCard iconName="bootstrap" />
+          <ToolCard iconName="tailwind" secondary />
+          <ToolCard iconName="bootstrap" secondary />
         </div>
       </div>
 
@@ -40,7 +40,7 @@ export default function ToolsByTypeSegment() {
         <div className={styles.toolsFrame}>
           <ToolCard iconName="git" />
           <ToolCard iconName="github" />
-          <ToolCard iconName="gitlab" />
+          <ToolCard iconName="gitlab" secondary />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ToolCard.module.css";
-import { BasicCard, GlassContainer, Icon, IconProps } from "@/components/ui";
+import { BasicCard, GlassContainer, Icon } from "@/components/ui";
 import { IconName } from "@/components/ui/Icon";
 
 type ToolCardProps = {
@@ -15,7 +15,11 @@ export default function ToolCard({
   secondary = false,
 }: ToolCardProps) {
   return (
-    <GlassContainer className={styles.toolCardContainer}>
+    <GlassContainer
+      className={
+        secondary ? styles.toolCardSecondaryContainer : styles.toolCardContainer
+      }
+    >
       <BasicCard className={styles.toolCard}>
         <Icon size={32} iconName={iconName} />
         <span className={styles.toolNameText}>{customToolName}</span>

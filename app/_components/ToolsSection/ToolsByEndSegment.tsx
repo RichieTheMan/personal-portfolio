@@ -14,8 +14,8 @@ export default function ToolsByEndSegment() {
           <ToolCard iconName="typescript" />
           <ToolCard iconName="react" />
           <ToolCard iconName="next" />
-          <ToolCard iconName="tailwind" />
-          <ToolCard iconName="bootstrap" />
+          <ToolCard iconName="tailwind" secondary />
+          <ToolCard iconName="bootstrap" secondary />
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function ToolsByEndSegment() {
           <ToolCard iconName="git" />
           <ToolCard iconName="github" />
           <ToolCard iconName="docker" />
-          <ToolCard iconName="gitlab" />
+          <ToolCard iconName="gitlab" secondary />
         </div>
       </div>
     </div>
