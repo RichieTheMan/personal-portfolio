@@ -30,9 +30,3 @@
   text-decoration: underline dotted var(--white);
   text-underline-position: under;
 }
-
-@media screen and (max-width: 940px) {
-}
-
-@media screen and (max-width: 620px) {
-}
