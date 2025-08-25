@@ -1,0 +1,85 @@
+.lookingForJobSection {
+  margin-inline: var(--huge);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoFrame {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.textFrame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+}
+
+.subText {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  color: var(--stone);
+  font-size: var(--fsm);
+}
+
+.mainTextFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--xs);
+}
+
+.mainText {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: var(--flg);
+  line-height: 80%;
+}
+
+.pulse {
+  position: relative;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+
+.pulse:before,
+.pulse:after {
+  border-radius: var(--full-radius);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.pulse:before {
+  background: var(--green);
+  width: 15px;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -50%);
+}
+
+.pulse:after {
+  animation: pulse 1.5s infinite;
+  border: 5px solid var(--green);
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}

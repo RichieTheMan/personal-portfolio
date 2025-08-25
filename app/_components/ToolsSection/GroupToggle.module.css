@@ -1,0 +1,18 @@
+.toggleFrame {
+  display: flex;
+  flex-direction: row;
+  gap: var(--micro);
+}
+
+.toggleButton,
+.toggleDivisor,
+.toggleButtonActive {
+  font-family: "Coolvetica";
+  text-transform: uppercase;
+  font-size: var(--fxs);
+  color: var(--grey);
+}
+
+.toggleButtonActive {
+  color: var(--white);
+}
