@@ -25,6 +25,9 @@
 }
 
 @media screen and (max-width: 620px) {
+  .navbar {
+    padding: var(--sm);
+  }
   .navSocialsFrame,
   .navRoutesFrame {
     display: none !important;

@@ -9,7 +9,7 @@
 
 .laptopFrame {
   position: absolute;
-  top: 800px;
+  top: 35%;
   left: -100px;
 
   animation: hover 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
@@ -17,7 +17,7 @@
 
 .handFrame {
   position: absolute;
-  bottom: 100px;
+  top: 50%;
   right: -460px;
 
   animation: vibrate 1s linear infinite both;
@@ -25,47 +25,36 @@
 
 @keyframes vibrate {
   0% {
-    -webkit-transform: translate(0);
     transform: translate(0);
   }
   10% {
-    -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
   }
   20% {
-    -webkit-transform: translate(2px, -2px);
     transform: translate(2px, -2px);
   }
   30% {
-    -webkit-transform: translate(-2px, 2px);
     transform: translate(-2px, 2px);
   }
   40% {
-    -webkit-transform: translate(2px, 2px);
     transform: translate(2px, 2px);
   }
   50% {
-    -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
   }
   60% {
-    -webkit-transform: translate(2px, -2px);
     transform: translate(2px, -2px);
   }
   70% {
-    -webkit-transform: translate(-2px, 2px);
     transform: translate(-2px, 2px);
   }
   80% {
-    -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
   }
   90% {
-    -webkit-transform: translate(2px, -2px);
     transform: translate(2px, -2px);
   }
   100% {
-    -webkit-transform: translate(0);
     transform: translate(0);
   }
 }

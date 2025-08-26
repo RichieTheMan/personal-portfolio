@@ -10,7 +10,7 @@
   font-family: "Coolvetica";
   text-transform: uppercase;
   font-size: var(--fxs);
-  color: var(--grey);
+  color: var(--stone);
 }
 
 .toggleButtonActive {

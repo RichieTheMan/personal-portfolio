@@ -13,6 +13,13 @@ function NavbarContent() {
   return (
     <nav className={styles.navbar}>
       <NavMenu />
+      <Image
+        className={styles.logo}
+        src="/assets/svgs/logo.svg"
+        alt="Ricardo Sousa's Logo"
+        width={24}
+        height={24}
+      />
       <button className={styles.dropdownMenuButton} onClick={showNavMenu}>
         <svg
           width="30"
@@ -38,13 +45,6 @@ function NavbarContent() {
           </g>
         </svg>
       </button>
-      <Image
-        className={styles.logo}
-        src="/assets/svgs/logo.svg"
-        alt="Ricardo Sousa's Logo"
-        width={24}
-        height={24}
-      />
       <GlassContainer className={`${styles.navRoutesFrame} abs-center`}>
         <NavButton text="Work" href="/" />
         <NavButton text="About" href="/information" />

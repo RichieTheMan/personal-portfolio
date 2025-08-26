@@ -26,19 +26,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
-          <div
-            id="modal-root"
-            style={{
-              position: "absolute",
-              zIndex: 999,
-              backgroundColor: "red",
-              top: 0,
-              bottom: 0,
-              right: 0,
-              left: 0,
-              display: "none",
-            }}
-          />
+          <div id="modal-root" />
         </VisitProvider>
       </body>
     </html>

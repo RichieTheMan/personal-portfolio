@@ -24,7 +24,7 @@
 .subText {
   font-family: "Coolvetica";
   text-transform: uppercase;
-  color: var(--stone);
+  color: var(--grey);
   font-size: var(--fsm);
 }
 
