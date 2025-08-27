@@ -16,38 +16,32 @@
 
 .navRoutesFrame {
   transform: translateX(150px);
-  filter: blur(4px);
+  filter: blur(2px);
   display: flex;
   flex-direction: column;
   border-radius: 26px !important;
-
-  animation: 0.2s slide-in ease forwards;
 }
 
 .navSocialsFrame {
-  transform: translateX(150%);
-  filter: blur(4px);
+  transform: translateX(150px);
+  filter: blur(2px);
   display: flex;
   flex-direction: row;
   gap: var(--tiny);
+}
 
-  animation: 0.2s slide-in 0.2s ease forwards;
+.slideIn {
+  animation: 0.2s slide-in ease forwards;
 }
 
 .slideOut {
   animation: 0.2s slide-out ease forwards;
 }
 
-.slideOutDelay {
-  transform: translateX(0);
-  filter: blur(0);
-  animation: 0.2s slide-out 0.2s ease forwards;
-}
-
 @keyframes slide-in {
   from {
     transform: translateX(150%);
-    filter: blur(4px);
+    filter: blur(2px);
   }
   to {
     transform: translateX(0);
@@ -58,7 +52,7 @@
 @keyframes slide-out {
   from {
     transform: translateX(0);
-    filter: blur(4px);
+    filter: blur(2px);
   }
   to {
     transform: translateX(150%);

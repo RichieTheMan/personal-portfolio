@@ -4,19 +4,13 @@ import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { NavButton } from "./NavButton";
 import { NavMenu } from "./NavMenu";
-import { NavbarProvider, useNavbarContext } from "./NavbarContext";
 import { GithubLink, GlassContainer, LinkedInLink } from "@/components/ui";
-import { delay } from "@/utils/delay";
 
-function NavbarContent() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const { isNavMenuShowing, setIsNavMenuShowing } = useNavbarContext();
 
-  const handleClick = async () => {
+  const handleClick = () => {
     setIsOpen(!isOpen);
-    if (isOpen) await delay(400);
-
-    setIsNavMenuShowing(!isNavMenuShowing);
   };
 
   return (
@@ -64,13 +58,5 @@ function NavbarContent() {
         <GithubLink size={20} />
       </div>
     </nav>
-  );
-}
-
-export default function Navbar() {
-  return (
-    <NavbarProvider>
-      <NavbarContent />
-    </NavbarProvider>
   );
 }
