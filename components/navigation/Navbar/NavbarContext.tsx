@@ -23,13 +23,5 @@ export function NavbarProvider({ children }: { children: React.ReactNode }) {
 export const useNavbarContext = () => {
   const { isNavMenuShowing, setIsNavMenuShowing } = useContext(NavbarContext);
 
-  const showNavMenu = () => {
-    setIsNavMenuShowing(true);
-  };
-
-  const hideNavMenu = () => {
-    setIsNavMenuShowing(false);
-  };
-
-  return { isNavMenuShowing, showNavMenu, hideNavMenu };
+  return { isNavMenuShowing, setIsNavMenuShowing };
 };

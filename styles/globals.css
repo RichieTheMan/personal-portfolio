@@ -51,24 +51,28 @@
 
 html {
   height: fit-content;
-  min-height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
   background: var(--charcoal);
 }
 
 body {
   height: fit-content;
   min-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: "OpenSans";
   color: var(--white);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 main {
   display: flex;
+  height: fit-content;
+  min-height: 100%;
+  width: 100%;
   flex-direction: column;
   gap: var(--huge);
 }
@@ -126,6 +130,7 @@ h6 {
 #modal-root {
   position: fixed;
   z-index: 999;
+  pointer-events: none;
   /* background-color: red; */
   /* top: 0;
   bottom: 0;
@@ -139,6 +144,10 @@ h6 {
 
 #modal-root:empty {
   display: none;
+}
+
+#modal-root > * {
+  pointer-events: all;
 }
 
 /* Scrollbar */

@@ -1,18 +1,28 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { NavButton } from "./NavButton";
 import { NavMenu } from "./NavMenu";
 import { NavbarProvider, useNavbarContext } from "./NavbarContext";
 import { GithubLink, GlassContainer, LinkedInLink } from "@/components/ui";
+import { delay } from "@/utils/delay";
 
 function NavbarContent() {
-  const { showNavMenu } = useNavbarContext();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { isNavMenuShowing, setIsNavMenuShowing } = useNavbarContext();
+
+  const handleClick = async () => {
+    setIsOpen(!isOpen);
+    if (isOpen) await delay(400);
+
+    setIsNavMenuShowing(!isNavMenuShowing);
+  };
 
   return (
     <nav className={styles.navbar}>
-      <NavMenu />
+      <NavMenu isOpen={isOpen} />
+
       <Image
         className={styles.logo}
         src="/assets/svgs/logo.svg"
@@ -20,7 +30,7 @@ function NavbarContent() {
         width={24}
         height={24}
       />
-      <button className={styles.dropdownMenuButton} onClick={showNavMenu}>
+      <button className={styles.dropdownMenuButton} onClick={handleClick}>
         <svg
           width="30"
           height="30"
