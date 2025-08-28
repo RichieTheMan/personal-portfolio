@@ -33,7 +33,29 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .footer {
+    padding: var(--md) var(--xl);
+  }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: var(--sm) var(--lg);
+    align-items: center;
+    gap: var(--lg);
+    flex-direction: column-reverse;
+  }
+  .linkFrame {
+    align-self: flex-start;
+    flex-direction: column;
+  }
+  .siteInfoFrame {
+    align-items: center;
+    gap: var(--xs);
+    justify-content: space-between;
+  }
+  .copyrightText,
+  .lastUpdateDateText {
+    text-align: center;
+  }
 }
