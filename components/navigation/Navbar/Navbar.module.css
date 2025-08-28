@@ -12,13 +12,13 @@
   pointer-events: all;
 }
 
-.navRoutesFrame,
 .navSocialsFrame {
   display: flex;
   gap: var(--sm);
 }
 
 .navRoutesFrame {
+  display: flex;
   z-index: 998;
 }
 
