@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import styles from "./NavMenu.module.css";
 import { GithubLink, GlassContainer, LinkedInLink } from "@/components/ui";
 import { NavButton } from "./NavButton";

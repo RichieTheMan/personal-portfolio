@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: var(--sm);
+  right: var(--lg);
   bottom: 0;
   pointer-events: none;
   transform: translateY(100%);

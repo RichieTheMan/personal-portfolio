@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 620px) {
   .navbar {
-    padding: var(--sm);
+    padding: var(--sm) var(--lg);
   }
   .navSocialsFrame,
   .navRoutesFrame {
