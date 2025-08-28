@@ -24,8 +24,8 @@ export default function Footer() {
       const updateText = `Last updated on ${date.toUTCString()}`;
 
       setUpdatetext(updateText);
-    } catch (error: any) {
-      console.error(error.message);
+    } catch (error: unknown) {
+      console.error(error);
       setUpdatetext("Update date Unavailable");
     }
   };
