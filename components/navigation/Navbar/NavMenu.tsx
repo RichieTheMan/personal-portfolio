@@ -5,9 +5,10 @@ import { NavButton } from "./NavButton";
 
 type NavMenuProps = {
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export function NavMenu({ isOpen }: NavMenuProps) {
+export function NavMenu({ isOpen, setIsOpen }: NavMenuProps) {
   const hasOpenedRef = useRef(isOpen);
 
   if (isOpen) hasOpenedRef.current = true;
@@ -18,11 +19,15 @@ export function NavMenu({ isOpen }: NavMenuProps) {
   const navRoutesStyle = `${styles.navRoutesFrame} ${slideInStyle} ${slideOutStyle}`;
   const navSocialsStyle = `${styles.navSocialsFrame} ${slideInStyle} ${slideOutStyle}`;
 
+  const handleClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className={styles.navMenu}>
       <GlassContainer className={navRoutesStyle}>
-        <NavButton text="Work" href="/" />
-        <NavButton text="About" href="/information" />
+        <NavButton text="Work" href="/" onClick={handleClick} />
+        <NavButton text="About" href="/information" onClick={handleClick} />
       </GlassContainer>
 
       <div className={navSocialsStyle}>

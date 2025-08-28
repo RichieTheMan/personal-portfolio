@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <NavMenu isOpen={isOpen} />
+      <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <Image
         className={styles.logo}
