@@ -1,4 +1,4 @@
-.UnderDevFrame {
+.underDevFrame {
   display: flex;
   flex-direction: row;
   gap: var(--micro);
@@ -12,7 +12,7 @@
 
 .tapeCircleDivisor {
   width: 5px;
-  height: 5px;
+  aspect-ratio: 1/1;
   border-radius: var(--full-radius);
   background-color: var(--charcoal);
 }
@@ -26,8 +26,17 @@
   font-weight: 100;
 }
 
-.UnderDevTextFrame {
+.underDevTextFrame {
   display: flex;
   align-items: center;
   gap: var(--micro);
+}
+
+@media screen and (max-width: 790px) {
+  .underDevText {
+    font-size: var(--fmicro);
+  }
+  .tapeCircleDivisor {
+    width: 3px;
+  }
 }

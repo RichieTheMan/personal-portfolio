@@ -22,6 +22,15 @@
   align-items: center;
 }
 
+.formerText {
+  font-size: var(--fxs);
+}
+
+.formerImage {
+  width: 179.072px;
+  aspect-ratio: auto;
+}
+
 .nameText {
   font-family: "Coolvetica";
   font-size: var(--flg);
@@ -75,8 +84,49 @@
   }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
+  .heroSection {
+    margin-inline: var(--xl);
+    gap: var(--lg);
+  }
+  .nameText,
+  .skillsTextLightFlicker,
+  .skillsText {
+    font-size: var(--fmd);
+  }
+  .formerText {
+    font-size: var(--ftiny);
+  }
+  .formerImage {
+    width: 110.63px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .nameText,
+  .skillsTextLightFlicker,
+  .skillsText {
+    font-size: var(--fsm);
+  }
 }
 
 @media screen and (max-width: 620px) {
+  .heroSection {
+    margin-inline: var(--md);
+    gap: var(--md);
+  }
+  .nameText,
+  .skillsTextLightFlicker,
+  .skillsText {
+    font-size: var(--fxs);
+  }
+  .formerText {
+    font-size: var(--fmicro);
+  }
+  .formerImage {
+    width: 68px;
+  }
+  .formerFrame {
+    gap: var(--tiny);
+  }
 }

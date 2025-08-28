@@ -21,6 +21,7 @@
 }
 
 .lightMask {
+  transform-origin: left;
   width: 3106px;
   height: 3106px;
   mask: radial-gradient(circle at center, #000000 50%, #00000000 70%);
@@ -86,8 +87,8 @@
   }
 }
 
-@media screen and (max-width: 940px) {
-}
-
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1060px) {
+  .lightMask {
+    scale: 0.86;
+  }
 }

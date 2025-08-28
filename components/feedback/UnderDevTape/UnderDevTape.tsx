@@ -10,7 +10,7 @@ export default function UnderDevTape({
   rotation = 0,
 }: UnderDevTapeProps) {
   const textList = Array.from({ length: 35 }, (_, i) => (
-    <div key={i} className={styles.UnderDevTextFrame}>
+    <div key={i} className={styles.underDevTextFrame}>
       <div className={styles.tapeCircleDivisor} />
       <span className={styles.underDevText}>Under Development</span>
     </div>
@@ -18,7 +18,7 @@ export default function UnderDevTape({
 
   return (
     <div
-      className={`${styles.UnderDevFrame} ${className}`}
+      className={`${styles.underDevFrame} ${className}`}
       style={{ transform: `translate(-50%, -50%) rotate(${rotation}deg)` }}
     >
       {textList}
