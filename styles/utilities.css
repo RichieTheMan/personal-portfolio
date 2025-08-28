@@ -64,6 +64,14 @@
   opacity: 0 !important;
 }
 
+.relative {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
 .abs-center {
   position: absolute;
   left: 50%;

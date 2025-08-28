@@ -23,6 +23,7 @@
   color: var(--white);
 }
 
+.loaderFrame,
 .lastUpdateDateText,
 .linkCategoryText {
   font-family: "OpenSans";
@@ -30,6 +31,10 @@
   font-size: var(--fmicro);
   font-weight: normal;
   color: var(--grey);
+}
+
+.loaderFrame {
+  color: transparent;
 }
 
 @media screen and (max-width: 1080px) {
